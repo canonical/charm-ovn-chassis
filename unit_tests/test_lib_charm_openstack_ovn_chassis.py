@@ -128,3 +128,31 @@ class TestOVNChassisCharm(Helper):
             mock.call('ovs-vsctl', 'set', 'open', '.',
                       'external-ids:ovn-encap-ip=cluster_local_addr'),
         ])
+
+    def test_configure_bridges(self):
+        self.patch_object(ovn_chassis.os_context, 'NeutronPortContext')
+        npc = mock.MagicMock()
+        npc.resolve_ports.return_value = ['eth0']
+        self.NeutronPortContext.return_value = npc
+        self.patch_target('config')
+        self.config.__getitem__.side_effect = [
+            '00:01:02:03:04:05:br-provider eth5:br-other',
+            'provider:br-provider other:br-other']
+        self.patch_object(ovn_chassis.ovsdb, 'SimpleOVSDB')
+        bridges = mock.MagicMock()
+        bridges.find.side_effect = StopIteration
+        opvs = mock.MagicMock()
+        self.SimpleOVSDB.side_effect = [bridges, opvs]
+        self.patch_object(ovn_chassis.ovsdb, 'add_br')
+        self.patch_object(ovn_chassis.ovsdb, 'list_ports')
+        self.list_ports().__iter__.return_value = []
+        self.patch_object(ovn_chassis.ovsdb, 'add_port')
+        self.target.configure_bridges()
+        npc.resolve_ports.assert_called_once_with(['00:01:02:03:04:05'])
+        bridges.find.assert_called_once_with('name=br-provider')
+        self.add_br.assert_called_once_with('br-provider',
+                                            ('charm-ovn-chassis', 'managed'))
+        self.add_port.assert_called_once_with(
+            'br-provider', 'eth0', ('charm-ovn-chassis', 'br-provider'))
+        opvs.set.assert_called_once_with(
+            '.', 'external_ids:ovn-bridge-mappings', 'provider:br-provider')

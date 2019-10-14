@@ -32,5 +32,6 @@ script:
     tox -c tox.ini -e $ENV;
     fi
   - if [ $ENV = 'func-smoke' ]; then
+     sudo su travis -c 'juju ssh -m $(juju models --format yaml|grep "^- name:.*zaza"|cut -f2 -d/) ovn-chassis/0 "sudo cat /var/log/juju/unit-ovn-chassis-0.log"';
      sudo su travis -c 'juju status -m $(juju models --format yaml|grep "^- name:.*zaza"|cut -f2 -d/)';
      fi
