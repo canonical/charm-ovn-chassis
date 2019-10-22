@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "3fa7e38b_4f7ce971",
+        "filename": "src/README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 13686
+      },
+      "writtenOn": "2019-10-22T15:52:37Z",
+      "side": 1,
+      "message": "Yes, it is in review here:\nhttps://github.com/openstack-charmers/openstack-bundles/pull/139",
+      "parentUuid": "3fa7e38b_a667c951",
+      "revId": "629fa189e0c7d74f3b16e195fd5e532380040a3c",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3fa7e38b_a6fee935",
         "filename": "src/README.md",
         "patchSetId": 1
