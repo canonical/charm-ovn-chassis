@@ -1,0 +1,11 @@
+Code-Review+1: Peter Matulis <peter.matulis@canonical.com>
+Verified+1: Canonical CI <uosci-testing-bot@ubuntu.com>
+Code-Review+2: Ryan Beisner <ryan.beisner@canonical.com>
+Code-Review+2: David Ames <david.ames@canonical.com>
+Workflow+1: David Ames <david.ames@canonical.com>
+Verified+2: Zuul
+Submitted-by: Zuul
+Submitted-at: Thu, 24 Oct 2019 17:49:04 +0000
+Reviewed-on: https://review.opendev.org/690026
+Project: x/charm-ovn-chassis
+Branch: refs/heads/master
