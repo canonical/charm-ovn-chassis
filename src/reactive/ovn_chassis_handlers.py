@@ -50,6 +50,13 @@ def enable_metadata():
         charm_instance.assess_status()
 
 
+@reactive.when('charm.installed', 'ovsdb.connected')
+def register_chassis():
+    ovsdb = reactive.endpoint_from_flag('ovsdb.available')
+    with charm.provide_charm_instance() as charm_instance:
+        ovsdb.register_chassis(charm_instance.system_id())
+
+
 @reactive.when('charm.installed')
 @reactive.when_any('config.changed.ovn-bridge-mappings',
                    'config.changed.interface-bridge-mappings',

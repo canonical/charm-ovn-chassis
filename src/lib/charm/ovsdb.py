@@ -120,6 +120,16 @@ class SimpleOVSDB(object):
         self.tool = tool
         self.tbl = table
 
+    def _get(self, key, record='.'):
+        cp = _run(self.tool, '-f', 'json', 'get', self.tbl, record, key)
+        return json.loads(cp.stdout)
+
+    def __getitem__(self, key):
+        try:
+            return self._get(key)
+        except subprocess.CalledProcessError:
+            raise KeyError
+
     def _find_tbl(self, condition=None):
         cmd = [self.tool, '-f', 'json', 'find', self.tbl]
         if condition:
