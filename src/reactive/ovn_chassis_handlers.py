@@ -50,6 +50,17 @@ def enable_metadata():
         charm_instance.assess_status()
 
 
+@reactive.when('charm.installed', 'ovsdb.connected')
+def register_chassis():
+    ovsdb = reactive.endpoint_from_flag('ovsdb.connected')
+    with charm.provide_charm_instance() as charm_instance:
+        try:
+            ovsdb.register_chassis(charm_instance.system_id())
+        except KeyError:
+            ch_core.hookenv.log('Unable to get system-id, ovs not ready?',
+                                level=ch_core.hookenv.DEBUG)
+
+
 @reactive.when('charm.installed')
 @reactive.when_any('config.changed.ovn-bridge-mappings',
                    'config.changed.interface-bridge-mappings',

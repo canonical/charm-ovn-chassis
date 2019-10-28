@@ -105,6 +105,16 @@ class OVNChassisCharm(charms_openstack.charm.OpenStackCharm):
             universal_newlines=True)
         ch_core.hookenv.log(cp, level=ch_core.hookenv.INFO)
 
+    def system_id(self):
+        """Get the system-id of the local chassis.
+
+        :returns: System ID of the local chassis.
+        :rtype: str
+        :raises: KeyError
+        """
+        ovs = ovsdb.SimpleOVSDB('ovs-vsctl', 'Open_vSwitch')
+        return ovs['.', 'external_ids:system-id']
+
     def configure_tls(self, certificates_interface=None):
         """Override default handler prepare certs per OVNs taste."""
         # The default handler in ``OpenStackCharm`` class does the CA only

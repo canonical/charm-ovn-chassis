@@ -1,5 +1,9 @@
+# TODO: much of this code is shared with the ``ovn-dedicated-chassis`` and
+# ``ovn-central`` charms and we should move this to a layer or library.
 import json
 import subprocess
+
+import charmhelpers.core as ch_core
 
 
 def _run(*args):
@@ -86,7 +90,6 @@ def list_ports(bridge):
     cp = _run('ovs-vsctl', 'list-ports', bridge)
     return cp.stdout.splitlines()
 
-
 class SimpleOVSDB(object):
     """Simple interface to OVSDB through the use of command line tools.
 
@@ -119,6 +122,17 @@ class SimpleOVSDB(object):
         """
         self.tool = tool
         self.tbl = table
+
+    def _get(self, record, key):
+        cp = _run(self.tool, '-f', 'json', 'get', self.tbl, record, key)
+        ch_core.hookenv.log(cp, level=ch_core.hookenv.INFO)
+        return json.loads(cp.stdout)
+
+    def __getitem__(self, rec_key):
+        try:
+            return self._get(*rec_key)
+        except subprocess.CalledProcessError:
+            raise KeyError
 
     def _find_tbl(self, condition=None):
         cmd = [self.tool, '-f', 'json', 'find', self.tbl]
