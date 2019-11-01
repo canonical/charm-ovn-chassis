@@ -1,0 +1,126 @@
+series: bionic
+relations:
+- - glance:image-service
+  - nova-cloud-controller:image-service
+- - glance:image-service
+  - nova-compute:image-service
+- - mysql:shared-db
+  - glance:shared-db
+- - mysql:shared-db
+  - keystone:shared-db
+- - mysql:shared-db
+  - neutron-api:shared-db
+- - mysql:shared-db
+  - nova-cloud-controller:shared-db
+- - keystone:identity-service
+  - glance:identity-service
+- - keystone:identity-service
+  - nova-cloud-controller:identity-service
+- - keystone:identity-service
+  - neutron-api:identity-service
+- - nova-compute:cloud-compute
+  - nova-cloud-controller:cloud-compute
+- - rabbitmq-server:amqp
+  - neutron-api:amqp
+- - rabbitmq-server:amqp
+  - glance:amqp
+- - rabbitmq-server:amqp
+  - nova-cloud-controller:amqp
+- - rabbitmq-server:amqp
+  - nova-compute:amqp
+- - neutron-api:neutron-api
+  - nova-cloud-controller:neutron-api
+- - placement
+  - mysql
+- - placement
+  - keystone
+- - placement
+  - nova-cloud-controller
+- - neutron-api-plugin-ovn:neutron-plugin
+  - neutron-api:neutron-plugin-api-subordinate
+- - vault:shared-db
+  - mysql:shared-db
+- - ovn-central:certificates
+  - vault:certificates
+- - ovn-central:ovsdb-cms
+  - neutron-api-plugin-ovn:ovsdb-cms
+- - neutron-api:certificates
+  - vault:certificates
+- - ovn-chassis:nova-compute
+  - nova-compute:neutron-plugin
+- - ovn-chassis:certificates
+  - vault:certificates
+- - ovn-chassis:ovsdb
+  - ovn-central:ovsdb
+- - vault:certificates
+  - neutron-api-plugin-ovn:certificates
+- - vault:certificates
+  - glance:certificates
+- - vault:certificates
+  - keystone:certificates
+- - vault:certificates
+  - nova-cloud-controller:certificates
+- - vault:certificates
+  - placement:certificates
+applications:
+  glance:
+    charm: cs:~openstack-charmers-next/glance
+    num_units: 1
+    options:
+      openstack-origin: cloud:bionic-train
+  keystone:
+    charm: cs:~openstack-charmers-next/keystone
+    num_units: 1
+    options:
+      openstack-origin: cloud:bionic-train
+  mysql:
+    constraints: mem=3072M
+    charm: cs:~openstack-charmers-next/percona-cluster
+    num_units: 1
+  neutron-api:
+    charm: cs:~openstack-charmers-next/neutron-api
+    num_units: 1
+    options:
+      openstack-origin: cloud:bionic-train
+      debug: True
+      flat-network-providers: physnet1
+      neutron-security-groups: True
+      manage-neutron-plugin-legacy-mode: false
+  nova-cloud-controller:
+    constraints: mem=3072M
+    charm: cs:~openstack-charmers-next/nova-cloud-controller
+    num_units: 1
+    options:
+      openstack-origin: cloud:bionic-train
+      debug: True
+      network-manager: Neutron
+  nova-compute:
+    constraints: mem=10240M
+    charm: cs:~openstack-charmers-next/nova-compute
+    num_units: 2
+    options:
+      openstack-origin: cloud:bionic-train
+      debug: True
+  rabbitmq-server:
+    charm: cs:~openstack-charmers-next/rabbitmq-server
+    num_units: 1
+  placement:
+    charm: cs:~openstack-charmers-next/placement
+    num_units: 1
+    constraints: mem=1G
+    options:
+      openstack-origin: cloud:bionic-train
+      debug: true
+  neutron-api-plugin-ovn:
+    charm: cs:~openstack-charmers-next/neutron-api-plugin-ovn
+  ovn-central:
+    charm: cs:~openstack-charmers-next/ovn-central
+    num_units: 3
+    options:
+      source: cloud:bionic-train
+  ovn-chassis:
+    series: bionic
+    charm: cs:~openstack-charmers-next/ovn-chassis
+  vault:
+    charm: cs:~openstack-charmers-next/vault
+    num_units: 1

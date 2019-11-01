@@ -1,10 +1,14 @@
 charm_name: ovn-chassis
 gate_bundles:
+- integration_openstack_bionic_train: integration-openstack-bionic-train
 - eoan
 - bionic
 smoke_bundles:
 - bionic
 target_deploy_status:
+  neutron-api-plugin-ovn:
+    workload-status: waiting
+    workload-status-message: "'ovsdb-cms' incomplete"
   ovn-central:
     workload-status: blocked
     workload-status-message: "'certificates' missing"
@@ -16,5 +20,13 @@ target_deploy_status:
     workload-status-message: Vault needs to be initialized
 configure:
 - zaza.openstack.charm_tests.vault.setup.auto_initialize_no_validation
+- integration_openstack_bionic_train:
+  - zaza.openstack.charm_tests.vault.setup.auto_initialize
+  - tests.workarounds.remove_security_group_rules_with_remote_group
+  - zaza.openstack.charm_tests.glance.setup.add_lts_image
+  - zaza.openstack.charm_tests.nova.setup.create_flavors
+  - zaza.openstack.charm_tests.nova.setup.manage_ssh_key
+  - zaza.openstack.charm_tests.neutron.setup.basic_overcloud_network
+  - zaza.openstack.charm_tests.octavia.setup.prepare_payload_instance
 tests:
 - zaza.charm_tests.noop.tests.NoopTest
