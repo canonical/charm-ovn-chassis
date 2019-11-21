@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3fa7e38b_f6b3a898",
+        "filename": "src/tests/bundles/bionic.yaml",
+        "patchSetId": 2
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 20870
+      },
+      "writtenOn": "2019-11-21T12:59:57Z",
+      "side": 1,
+      "message": "Should magpie be in the bundles?",
+      "range": {
+        "startLine": 25,
+        "startChar": 0,
+        "endLine": 27,
+        "endChar": 16
+      },
+      "revId": "9ef7857fd94359b335d1fa2273280b7e6c231b20",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
