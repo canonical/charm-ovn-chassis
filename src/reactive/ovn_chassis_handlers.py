@@ -20,3 +20,15 @@ from . import ovn_chassis_charm_handlers
 def enable_ovn_chassis_handlers():
     reactive.set_flag(
         ovn_chassis_charm_handlers.OVN_CHASSIS_ENABLE_HANDLERS_FLAG)
+
+
+@reactive.when(ovn_chassis_charm_handlers.OVN_CHASSIS_ENABLE_HANDLERS_FLAG,
+               'ovsdb-subordinate.interfaces.new_requests')
+def create_interfaces():
+    ep = reactive.endpoint_from_name('ovsdb-subordinate')
+    ifreqs = ep.interface_requests
+    for bridge in ifreqs:
+        for (ifname, ifdata) in ifreqs[bridge].items():
+            # do something
+            pass
+    ep.interface_requests_handled()

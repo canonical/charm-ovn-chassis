@@ -1,6 +1,7 @@
 includes:
   - layer:ovn
   - interface:ovsdb
+  - interface:ovsdb-subordinate
   - interface:neutron-plugin
 options:
   basic:
