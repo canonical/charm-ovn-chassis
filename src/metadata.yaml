@@ -15,8 +15,8 @@ provides:
     interface: neutron-plugin
     scope: container
 requires:
-  juju-info:
-    interface: juju-info
+  ovsdb-subordinate:
+    interface: ovsdb-subordinate
     scope: container
   ovsdb:
     interface: ovsdb
