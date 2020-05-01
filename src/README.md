@@ -9,18 +9,21 @@ network.
 Open vSwitch bridges for integration, external Layer2 and Layer3 connectivity
 is managed by the charm.
 
-> **Note**: The OVN charms are considered preview charms.
-
 # Usage
 
 OVN makes use of Public Key Infrastructure (PKI) to authenticate and authorize
 control plane communication.  The charm requires a Certificate Authority to be
 present in the model as represented by the `certificates` relation.
 
-There is a [OVN overlay bundle](https://github.com/openstack-charmers/openstack-bundles/blob/master/development/overlays/openstack-base-ovn.yaml)
-for use in conjunction with the [OpenStack Base bundle](https://github.com/openstack-charmers/openstack-bundles/blob/master/development/openstack-base-bionic-train/bundle.yaml)
-which give an example of how you can automate certificate lifecycle management
-with the help from [Vault](https://jaas.ai/vault/).
+The [OpenStack Base bundle][openstack-base-bundle] gives an example of how you
+can deploy OpenStack and OVN with [Vault][charm-vault] to automate certificate
+lifecycle management.
+
+## OpenStack support
+
+When related to the [nova-compute][charm-nova-compute] charm the OVN Chassis
+charm will enable services that provide [Nova Metadata][nova-metadata] to
+instances.
 
 ## Network Spaces support
 
@@ -67,8 +70,83 @@ that network.
 Networks for use with external Layer2 connectivity should have mappings present
 on all chassis with potential to host the consuming payload.
 
+## DPDK fast packet processing support
+
+It is possible to configure chassis to use experimental DPDK userspace network
+acceleration.
+
+> **Note**: Currently instances are required to be attached to a external
+  network (also known as provider network) for connectivity.  OVN supports
+  distributed DHCP for provider networks.  For OpenStack workloads use of
+  [Nova config drive][nova-config-drive] is required to provide metadata to
+  instances when using DPDK.
+
+### Prerequisites
+
+To use the feature you need to use a supported CPU architecture
+and network interface card (NIC) hardware.  Please consult the DPDK
+[supported hardware page][dpdk-hardware].
+
+Machines need to be pre-configured with apropriate kernel command-line
+parameters.  The charm does not handle this facet of configuration and it is
+expected that the user configure this either manually or through the bare metal
+provisioning layer (for example [MAAS][maas]).  Example:
+
+    default_hugepagesz=1G hugepagesz=1G hugepages=64 intel_iommu=on iommu=pt
+
+For the communication between the userspace networking stack and the NIC driver
+in a virtual machine instance to work the instances need to be configured to
+use hugepages.  For OpenStack this can be accomplished by
+[Customizing instance huge pages allocations][instance-huge-pages].
+Example:
+
+    $ openstack flavor set m1.large --property hw:mem_page_size=large
+
+By default, the charm will configure Open vSwitch/DPDK to consume one processor
+core + 1G of RAM from each NUMA node on the unit being deployed; this can be
+tuned using the ``dpdk-socket-memory`` and ``dpdk-socket-cores`` configuration
+options.  The userspace kernel driver can be configured using the
+``dpdk-driver`` configuration option.  See config.yaml for more details.
+
+> **Note**: Changing dpdk-socket-\* configuration options will trigger a
+  restart of Open vSwitch, and subsequently interrupt instance connectivity.
+
+## DPDK bonding
+
+Once Network interface cards are bound to DPDK they will be invisible to the
+standard Linux kernel network stack and subsequently it is not possible to use
+standard system tools to configure bonding.
+
+For DPDK interfaces the charm supports configuring bonding in Open vSwitch.
+This is accomplished through the ``dpdk-bond-mappings`` and
+``dpdk-bond-config`` configuration options.  Example:
+
+    ovn-chassis:
+      options:
+        enable-dpdk: True
+        bridge-interface-mappings: br-ex:dpdk-bond0
+        dpdk-bond-mappings: "dpdk-bond0:00:53:00:00:00:42 dpdk-bond0:00:53:00:00:00:51"
+        dpdk-bond-config: ":balance-slb:off:fast"
+
+In this example, the network interface cards associated with the two MAC
+addresses provided will be used to build a bond identified by a port named
+'dpdk-bond0' which will be attached to the 'br-ex' bridge.
+
+
 # Bugs
 
-Please report bugs on [Launchpad](https://bugs.launchpad.net/charm-ovn-chassis/+filebug).
+Please report bugs on [Launchpad][lp-ovn-chassis].
 
-For general questions please refer to the OpenStack [Charm Guide](https://docs.openstack.org/charm-guide/latest/).
+For general questions please refer to the OpenStack [Charm Guide][cg].
+
+<!-- LINKS -->
+[cg]: https://docs.openstack.org/charm-guide/latest/
+[charm-nova-compute]: https://jaas.ai/nova-compute
+[charm-vault]: https://jaas.ai/vault/
+[dpdk-hardware]: http://core.dpdk.org/supported/
+[lp-ovn-chassis]: https://bugs.launchpad.net/charm-ovn-chassis/+filebug
+[maas]: https://maas.io/
+[nova-config-drive]: https://docs.openstack.org/nova/latest/user/metadata.html#config-drives
+[nova-metadata]: https://docs.openstack.org/nova/latest/user/metadata.html
+[instance-huge-pages]: https://docs.openstack.org/nova/latest/admin/huge-pages.html#customizing-instance-huge-pages-allocations
+[openstack-base-bundle]: https://github.com/openstack-charmers/openstack-bundles/blob/master/development/openstack-base-bionic-ussuri-ovn/bundle.yaml
