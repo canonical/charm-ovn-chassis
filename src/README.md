@@ -70,6 +70,74 @@ that network.
 Networks for use with external Layer2 connectivity should have mappings present
 on all chassis with potential to host the consuming payload.
 
+## SR-IOV for networking support
+
+Single root I/O virtualization (SR-IOV) enables splitting a single physical
+network port into multiple virtual network ports known as virtual functions
+(VFs).  The division is done at the PCI level which allows attaching the VF
+directly to a virtual machine instance, bypassing the networking stack of the
+hypervisor hosting the instance.
+
+It is possible to configure chassis to prepare network interface cards (NICs)
+for use with SR-IOV and make them available to OpenStack.
+
+### Prerequisites
+
+To use the feature you need to use a NIC with support for SR-IOV.
+
+Machines need to be pre-configured with apropriate kernel command-line
+parameters.  The charm does not handle this facet of configuration and it is
+expected that the user configure this either manually or through the bare metal
+provisioning layer (for example [MAAS][maas]).  Example:
+
+    intel_iommu=on iommu=pt probe_vf=0
+
+### Charm configuration
+
+Enable SR-IOV, map physical network name 'physnet2' to the physical port named
+`enp3s0f0` and create 4 virtual functions on it.
+
+    juju config ovn-chassis enable-sriov=true
+    juju config ovn-chassis sriov-device-mappings=physnet2:enp3s0f0
+    juju config ovn-chassis sriov-numvfs=enp3s0f0:4
+
+After enabling the virtual functions you should make note of the ``vendor_id``
+and ``product_id`` of the virtual functions.
+
+    juju run --application ovn-chassis 'lspci -nn | grep "Virtual Function"'
+    03:10.0 Ethernet controller [0200]: Intel Corporation 82599 Ethernet Controller Virtual Function [8086:10ed] (rev 01)
+    03:10.2 Ethernet controller [0200]: Intel Corporation 82599 Ethernet Controller Virtual Function [8086:10ed] (rev 01)
+    03:10.4 Ethernet controller [0200]: Intel Corporation 82599 Ethernet Controller Virtual Function [8086:10ed] (rev 01)
+    03:10.6 Ethernet controller [0200]: Intel Corporation 82599 Ethernet Controller Virtual Function [8086:10ed] (rev 01)
+
+In the above example ``vendor_id`` is '8086' and ``product_id`` is '10ed'.
+
+Add mapping between physical network name, physical port and Open vSwitch
+bridge.
+
+    juju config ovn-chassis ovn-bridge-mappings=physnet2:br-ex
+    juju config ovn-chassis bridge-interface-mappings br-ex:a0:36:9f:dd:37:a8
+
+> **Note**: The above configuration allows OVN to configure a 'external' port
+  on one of the chassis for providing DHCP and metadata to instances connected
+  directly to the network through SR-IOV.
+
+For OpenStack to make use of the VFs the ``neutron-sriov-agent`` needs to talk
+to RabbitMQ.
+
+    juju add-relation ovn-chassis:amqp rabbitmq-server:amqp
+
+OpenStack Nova also needs to know which PCI devices it is allowed to pass
+through to instances.
+
+    juju config nova-compute pci-passthrough-whitelist='{"vendor_id":"8086", "product_id":"10ed", "physical_network":"physnet2"}'
+
+### Boot an instance
+
+    openstack port create --network my-network --vnic-type direct my-port
+    openstack server create --flavor my-flavor --key-name my-key \
+        --nic port-id=<UUID OF THE PORT CREATED ABOVE> my-instance
+
 ## DPDK fast packet processing support
 
 It is possible to configure chassis to use experimental DPDK userspace network
