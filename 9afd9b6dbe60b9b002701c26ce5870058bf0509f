@@ -1,0 +1,285 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1f493fa4_a1d2ed32",
+        "filename": "src/README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 80,
+      "author": {
+        "id": 30561
+      },
+      "writtenOn": "2020-05-06T20:12:46Z",
+      "side": 1,
+      "message": "I\u0027m still a bit perplexed as to why someone would use this feature. Maybe include a use case?",
+      "revId": "9afd9b6dbe60b9b002701c26ce5870058bf0509f",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1f493fa4_0145a115",
+        "filename": "src/README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 88,
+      "author": {
+        "id": 30561
+      },
+      "writtenOn": "2020-05-06T20:12:46Z",
+      "side": 1,
+      "message": "appropriate",
+      "range": {
+        "startLine": 88,
+        "startChar": 40,
+        "endLine": 88,
+        "endChar": 50
+      },
+      "revId": "9afd9b6dbe60b9b002701c26ce5870058bf0509f",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1f493fa4_c1ad799c",
+        "filename": "src/README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 98,
+      "author": {
+        "id": 30561
+      },
+      "writtenOn": "2020-05-06T20:12:46Z",
+      "side": 1,
+      "message": ":",
+      "range": {
+        "startLine": 98,
+        "startChar": 47,
+        "endLine": 98,
+        "endChar": 48
+      },
+      "revId": "9afd9b6dbe60b9b002701c26ce5870058bf0509f",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1f493fa4_c1df3938",
+        "filename": "src/README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 104,
+      "author": {
+        "id": 30561
+      },
+      "writtenOn": "2020-05-06T20:12:46Z",
+      "side": 1,
+      "message": "take",
+      "range": {
+        "startLine": 104,
+        "startChar": 48,
+        "endLine": 104,
+        "endChar": 52
+      },
+      "revId": "9afd9b6dbe60b9b002701c26ce5870058bf0509f",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1f493fa4_21941d44",
+        "filename": "src/README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 105,
+      "author": {
+        "id": 30561
+      },
+      "writtenOn": "2020-05-06T20:12:46Z",
+      "side": 1,
+      "message": ":",
+      "range": {
+        "startLine": 105,
+        "startChar": 43,
+        "endLine": 105,
+        "endChar": 44
+      },
+      "revId": "9afd9b6dbe60b9b002701c26ce5870058bf0509f",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1f493fa4_6177453c",
+        "filename": "src/README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 108,
+      "author": {
+        "id": 30561
+      },
+      "writtenOn": "2020-05-06T20:12:46Z",
+      "side": 1,
+      "message": "Let\u0027s separate input from output somehow.",
+      "revId": "9afd9b6dbe60b9b002701c26ce5870058bf0509f",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1f493fa4_61c90577",
+        "filename": "src/README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 115,
+      "author": {
+        "id": 30561
+      },
+      "writtenOn": "2020-05-06T20:12:46Z",
+      "side": 1,
+      "message": "mappings",
+      "range": {
+        "startLine": 115,
+        "startChar": 4,
+        "endLine": 115,
+        "endChar": 11
+      },
+      "revId": "9afd9b6dbe60b9b002701c26ce5870058bf0509f",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1f493fa4_018f612e",
+        "filename": "src/README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 116,
+      "author": {
+        "id": 30561
+      },
+      "writtenOn": "2020-05-06T20:12:46Z",
+      "side": 1,
+      "message": ":",
+      "range": {
+        "startLine": 116,
+        "startChar": 6,
+        "endLine": 116,
+        "endChar": 7
+      },
+      "revId": "9afd9b6dbe60b9b002701c26ce5870058bf0509f",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1f493fa4_a1a02da7",
+        "filename": "src/README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 121,
+      "author": {
+        "id": 30561
+      },
+      "writtenOn": "2020-05-06T20:12:46Z",
+      "side": 1,
+      "message": "an",
+      "range": {
+        "startLine": 121,
+        "startChar": 60,
+        "endLine": 121,
+        "endChar": 61
+      },
+      "revId": "9afd9b6dbe60b9b002701c26ce5870058bf0509f",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1f493fa4_619e2564",
+        "filename": "src/README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 126,
+      "author": {
+        "id": 30561
+      },
+      "writtenOn": "2020-05-06T20:12:46Z",
+      "side": 1,
+      "message": ":",
+      "range": {
+        "startLine": 126,
+        "startChar": 11,
+        "endLine": 126,
+        "endChar": 12
+      },
+      "revId": "9afd9b6dbe60b9b002701c26ce5870058bf0509f",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1f493fa4_41996977",
+        "filename": "src/README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 131,
+      "author": {
+        "id": 30561
+      },
+      "writtenOn": "2020-05-06T20:12:46Z",
+      "side": 1,
+      "message": ":",
+      "range": {
+        "startLine": 131,
+        "startChar": 20,
+        "endLine": 131,
+        "endChar": 21
+      },
+      "revId": "9afd9b6dbe60b9b002701c26ce5870058bf0509f",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1f493fa4_818c1136",
+        "filename": "src/README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 136,
+      "author": {
+        "id": 30561
+      },
+      "writtenOn": "2020-05-06T20:12:46Z",
+      "side": 1,
+      "message": "Add a few words here.",
+      "revId": "9afd9b6dbe60b9b002701c26ce5870058bf0509f",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1f493fa4_217d3d1c",
+        "filename": "src/README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 139,
+      "author": {
+        "id": 30561
+      },
+      "writtenOn": "2020-05-06T20:12:46Z",
+      "side": 1,
+      "message": "style guide says to indent multi-line commands by three spaces",
+      "range": {
+        "startLine": 139,
+        "startChar": 4,
+        "endLine": 139,
+        "endChar": 8
+      },
+      "revId": "9afd9b6dbe60b9b002701c26ce5870058bf0509f",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
