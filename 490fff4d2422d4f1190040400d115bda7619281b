@@ -1,0 +1,9 @@
+Verified+1: Canonical CI <uosci-testing-bot@ubuntu.com>
+Code-Review+2: Chris MacNaughton (icey) <chris.macnaughton@canonical.com>
+Workflow+1: Chris MacNaughton (icey) <chris.macnaughton@canonical.com>
+Verified+2: Zuul
+Submitted-by: Zuul
+Submitted-at: Fri, 26 Jun 2020 08:07:23 +0000
+Reviewed-on: https://review.opendev.org/737909
+Project: x/charm-ovn-chassis
+Branch: refs/heads/master
