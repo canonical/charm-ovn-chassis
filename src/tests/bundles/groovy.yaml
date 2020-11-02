@@ -22,10 +22,10 @@ machines:
 applications:
 
   vault-mysql-router:
-    charm: cs:~openstack-charmers-next/mysql-router
+    charm: cs:~openstack-charmers/mysql-router
 
   mysql-innodb-cluster:
-    charm: cs:~openstack-charmers-next/mysql-innodb-cluster
+    charm: cs:~openstack-charmers/mysql-innodb-cluster
     num_units: 3
     options:
       source: *openstack-origin
@@ -35,7 +35,7 @@ applications:
       - '2'
 
   vault:
-    charm: cs:~openstack-charmers-next/vault
+    charm: cs:~openstack-charmers/vault
     num_units: 1
     to:
       - '3'
@@ -44,7 +44,7 @@ applications:
     charm: cs:nrpe
 
   ovn-central:
-    charm: cs:~openstack-charmers-next/ovn-central
+    charm: cs:~openstack-charmers/ovn-central
     num_units: 3
     options:
       source: *openstack-origin
@@ -54,14 +54,14 @@ applications:
       - '6'
 
   magpie:
-    charm: cs:~openstack-charmers-next/magpie
+    charm: cs:~openstack-charmers/magpie
     num_units: 2
     to:
       - '7'
       - '8'
 
   ovn-chassis:
-    charm: cs:~openstack-charmers-next/ovn-chassis
+    charm: cs:~openstack-charmers/ovn-chassis
 
 relations:
 
