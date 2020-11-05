@@ -40,3 +40,14 @@ class UssuriOVNChassisCharm(charms.ovn_charm.BaseUssuriOVNChassisCharm):
     # Setting an empty source_config_key activates special handling of release
     # selection suitable for subordinate charms
     source_config_key = ''
+
+
+class VictoriaOVNChassisCharm(charms.ovn_charm.BaseVictoriaOVNChassisCharm):
+    # OpenvSwitch and OVN is distributed as part of the Ubuntu Cloud Archive
+    # Pockets get their name from OpenStack releases
+    release = 'victoria'
+    name = 'ovn-chassis'
+
+    # Setting an empty source_config_key activates special handling of release
+    # selection suitable for subordinate charms
+    source_config_key = ''
