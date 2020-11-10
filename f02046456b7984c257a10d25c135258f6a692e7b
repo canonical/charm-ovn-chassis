@@ -1,0 +1,9 @@
+Verified+1: Canonical CI <uosci-testing-bot@ubuntu.com>
+Code-Review+2: Billy Olsen <billy.olsen@gmail.com>
+Workflow+1: Corey Bryant <corey.bryant@canonical.com>
+Verified+2: Zuul
+Submitted-by: Zuul
+Submitted-at: Tue, 10 Nov 2020 18:50:58 +0000
+Reviewed-on: https://review.opendev.org/762113
+Project: x/charm-ovn-chassis
+Branch: refs/heads/master
