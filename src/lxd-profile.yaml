@@ -1,2 +1,3 @@
 config:
   linux.kernel_modules: openvswitch
+  limits.kernel.memlock: unlimited
