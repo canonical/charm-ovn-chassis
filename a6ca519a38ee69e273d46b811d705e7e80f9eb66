@@ -1,0 +1,10 @@
+Code-Review+1: David Ames <david.ames@canonical.com>
+Code-Review+2: Aurelien Lourot <aurelien.lourot@canonical.com>
+Verified+1: Canonical CI <uosci-testing-bot@ubuntu.com>
+Verified+2: Zuul
+Workflow+1: Aurelien Lourot <aurelien.lourot@canonical.com>
+Submitted-by: Zuul
+Submitted-at: Fri, 22 Jan 2021 12:53:19 +0000
+Reviewed-on: https://review.opendev.org/c/x/charm-ovn-chassis/+/771874
+Project: x/charm-ovn-chassis
+Branch: refs/heads/master
