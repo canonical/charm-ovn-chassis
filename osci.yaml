@@ -1,0 +1,11 @@
+- project:
+    templates:
+      - charm-unit-jobs
+    jobs:
+      - bionic-ussuri
+      - bionic-train
+      - focal
+      - groovy
+    vars:
+      needs_charm_build: true
+      charm_build_name: ovn-chassis
