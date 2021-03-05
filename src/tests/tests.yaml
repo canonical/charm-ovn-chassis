@@ -4,6 +4,7 @@ gate_bundles:
 - bionic-train
 - focal
 - groovy
+- hirsute
 smoke_bundles:
 - focal
 target_deploy_status:
@@ -29,4 +30,4 @@ tests:
 - zaza.openstack.charm_tests.ovn.tests.ChassisCharmOperationTest
 tests_options:
   force_deploy:
-    - groovy
+    - hirsute
