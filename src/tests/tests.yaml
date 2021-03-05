@@ -4,8 +4,9 @@ gate_bundles:
 - bionic-train
 - focal
 - groovy
+- hirsute
 smoke_bundles:
-- bionic-train
+- focal
 target_deploy_status:
   magpie:
     workload-status-message: icmp ok
@@ -29,4 +30,4 @@ tests:
 - zaza.openstack.charm_tests.ovn.tests.ChassisCharmOperationTest
 tests_options:
   force_deploy:
-    - groovy
+    - hirsute
