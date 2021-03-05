@@ -22,6 +22,7 @@ machines:
 applications:
 
   vault-mysql-router:
+<<<<<<< HEAD   (e81c14 Rebuild to pickup charmhelpers change)
     charm: cs:~openstack-charmers/mysql-router
 
   mysql-innodb-cluster:
@@ -63,6 +64,49 @@ applications:
 
   ovn-chassis:
     charm: cs:~openstack-charmers/ovn-chassis
+=======
+    charm: cs:~openstack-charmers-next/mysql-router
+
+  mysql-innodb-cluster:
+    charm: cs:~openstack-charmers-next/mysql-innodb-cluster
+    num_units: 3
+    options:
+      source: *openstack-origin
+    to:
+      - '0'
+      - '1'
+      - '2'
+
+  vault:
+    charm: cs:~openstack-charmers-next/vault
+    num_units: 1
+    to:
+      - '3'
+
+  nrpe:
+    charm: cs:nrpe
+    series: focal
+
+  ovn-central:
+    charm: cs:~openstack-charmers-next/ovn-central
+    num_units: 3
+    options:
+      source: *openstack-origin
+    to:
+      - '4'
+      - '5'
+      - '6'
+
+  magpie:
+    charm: cs:~openstack-charmers-next/magpie
+    num_units: 2
+    to:
+      - '7'
+      - '8'
+
+  ovn-chassis:
+    charm: cs:~openstack-charmers-next/ovn-chassis
+>>>>>>> CHANGE (64eb9c Test bundles for focal-wallaby and hirsute-wallaby)
 
 relations:
 
