@@ -34,5 +34,7 @@ applications:
   ovn-chassis:
     series: bionic
     charm: ../../../ovn-chassis
+    options:
+      networking-tools-source: ppa:fnordahl/lp1919030
   nrpe:
     charm: cs:nrpe
