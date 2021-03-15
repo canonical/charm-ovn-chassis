@@ -62,6 +62,8 @@ applications:
 
   ovn-chassis:
     charm: cs:~openstack-charmers-next/ovn-chassis
+    options:
+      networking-tools-source: ppa:fnordahl/lp1919030
 
 relations:
 
