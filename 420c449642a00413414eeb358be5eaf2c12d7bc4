@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7bb6a212_e7bc5dd1",
+        "filename": "layers/layer-ovn",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 20870
+      },
+      "writtenOn": "2021-07-21T07:10:15Z",
+      "side": 1,
+      "message": "This part of the commit is breaking the build as it\u0027s been added.  It looks like a git subproject which isn\u0027t how charms.reactive charms \u0027work\u0027.",
+      "revId": "420c449642a00413414eeb358be5eaf2c12d7bc4",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": true
+    }
+  ]
+}
