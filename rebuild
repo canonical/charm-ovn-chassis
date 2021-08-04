@@ -2,4 +2,8 @@
 # when dependencies of the charm change,
 # but nothing in the charm needs to.
 # simply change the uuid to something new
+<<<<<<< HEAD   (29b0e5 rebuild - restore proxy env vars for add-apt-repository)
 8ee8ee46-db58-11eb-ba3d-47eeb2f6cd0d
+=======
+d8b0d72c-f508-11eb-8479-6b7cfdc4cdac
+>>>>>>> CHANGE (c0de8c Rebuild to pickup charmhelpers change)
