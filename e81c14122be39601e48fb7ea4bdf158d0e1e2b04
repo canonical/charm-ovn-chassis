@@ -1,0 +1,10 @@
+Verified+1: Canonical CI <uosci-testing-bot@ubuntu.com>
+Verified+2: Zuul
+Workflow+1: gnuoy <liam.young@canonical.com>
+Code-Review+2: Alex Kavanagh <alex.kavanagh@canonical.com>
+Code-Review+2: gnuoy <liam.young@canonical.com>
+Submitted-by: Zuul
+Submitted-at: Wed, 11 Aug 2021 08:42:30 +0000
+Reviewed-on: https://review.opendev.org/c/x/charm-ovn-chassis/+/803950
+Project: x/charm-ovn-chassis
+Branch: refs/heads/stable/21.04
