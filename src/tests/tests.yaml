@@ -1,16 +1,18 @@
 charm_name: ovn-chassis
 
 gate_bundles:
-- bionic-ussuri
 - bionic-train
-- focal
-- groovy
+- bionic-ussuri
+- focal-ussuri
+- focal-victoria
+- focal-wallaby
 
 smoke_bundles:
-- focal
+- focal-ussuri
 
 dev_bundles:
-- hirsute
+- hirsute-wallaby
+- impish-xena
 
 target_deploy_status:
   magpie:
@@ -39,4 +41,4 @@ tests:
 
 tests_options:
   force_deploy:
-    - hirsute
+    - impish
