@@ -11,6 +11,7 @@ smoke_bundles:
 
 dev_bundles:
 - hirsute
+- impish
 
 target_deploy_status:
   magpie:
@@ -39,4 +40,4 @@ tests:
 
 tests_options:
   force_deploy:
-    - hirsute
+    - impish
