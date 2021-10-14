@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8a2bb51e_5aebc85d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11805
+      },
+      "writtenOn": "2021-10-14T18:21:19Z",
+      "side": 1,
+      "message": "plan is to land this batch on upstream zuul passing only",
+      "revId": "b38a8afd15a93e6dce765f07c7fbb5dd486d96f7",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    }
+  ]
+}
