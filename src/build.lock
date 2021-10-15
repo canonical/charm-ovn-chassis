@@ -53,7 +53,7 @@
       "item": "interface:ovsdb",
       "url": "https://opendev.org/x/charm-interface-ovsdb.git",
       "vcs": null,
-      "branch": null,
+      "branch": "55e82469e841aa2e9acac3a8940077ea8d42b150",
       "commit": "55e82469e841aa2e9acac3a8940077ea8d42b150"
     },
     {
@@ -77,7 +77,7 @@
       "item": "interface:ovsdb-subordinate",
       "url": "https://opendev.org/x/charm-interface-ovsdb.git",
       "vcs": null,
-      "branch": null,
+      "branch": "55e82469e841aa2e9acac3a8940077ea8d42b150",
       "commit": "55e82469e841aa2e9acac3a8940077ea8d42b150"
     },
     {
