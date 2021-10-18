@@ -35,6 +35,23 @@
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "2725955e_a1167eb2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 30561
+      },
+      "writtenOn": "2021-10-18T17:17:16Z",
+      "side": 1,
+      "message": "I see you\u0027ve filed a new commit: 814444\nThis present one should therefore be abandoned (there\u0027s a button top-right).",
+      "revId": "262bf7e582de4b293e2049c63b52ee9d0275c08e",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "dd0c4d18_b974b5c0",
