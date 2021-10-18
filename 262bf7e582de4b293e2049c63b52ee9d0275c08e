@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f30fd14a_7a276a51",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34059
+      },
+      "writtenOn": "2021-10-18T15:58:56Z",
+      "side": 1,
+      "message": "Hi Chris:\n\nCan I bother you to review the change I\u0027ve made to charm-ovn-chassis README ?\n\nThanks\nAndy ",
+      "revId": "262bf7e582de4b293e2049c63b52ee9d0275c08e",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    }
+  ]
+}
