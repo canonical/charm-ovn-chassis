@@ -18,6 +18,23 @@
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "4d23488c_870b17ef",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34059
+      },
+      "writtenOn": "2021-10-18T16:34:30Z",
+      "side": 1,
+      "message": "Sure, changed the link label to [cdg-ovn-cfg]",
+      "revId": "262bf7e582de4b293e2049c63b52ee9d0275c08e",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "dd0c4d18_b974b5c0",
