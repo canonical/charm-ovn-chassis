@@ -41,7 +41,7 @@ instances.
 It is possible to configure chassis to prepare network interface cards (NICs)
 for use with DPDK, SR-IOV and hardware offload support.
 
-Please refer to the [OVN Appendix][ovn-cdg] in the [OpenStack Charms Deployment
+Please refer to the [OVN Configuration][cdg-ovn-cfg] in the [OpenStack Charms Deployment
 Guide][cdg] for details.
 
 ## Network spaces
@@ -115,6 +115,7 @@ For general questions please refer to the [OpenStack Charm Guide][cg].
 [cg]: https://docs.openstack.org/charm-guide/latest/
 [cdg]: https://docs.openstack.org/project-deploy-guide/charm-deployment-guide/latest/
 [cdg-ovn]: https://docs.openstack.org/project-deploy-guide/charm-deployment-guide/latest/app-ovn.html
+[cdg-ovn-cfg]: https://docs.openstack.org/project-deploy-guide/charm-deployment-guide/latest/app-ovn.html#configuration
 [nova-compute-charm]: https://jaas.ai/nova-compute
 [vault-charm]: https://jaas.ai/vault/
 [ovn-central-charm]: https://jaas.ai/ovn-central
@@ -123,3 +124,4 @@ For general questions please refer to the [OpenStack Charm Guide][cg].
 [openstack-base-bundle]: https://github.com/openstack-charmers/openstack-bundles/blob/master/development/openstack-base-focal-ussuri-ovn/bundle.yaml
 [nova-metadata]: https://docs.openstack.org/nova/latest/user/metadata.html
 [cdg-deferred-service-events]: https://docs.openstack.org/project-deploy-guide/charm-deployment-guide/latest/deferred-events.html
+[cdg-ovn-cfg]: https://docs.openstack.org/project-deploy-guide/charm-deployment-guide/latest/app-ovn.html#configuration
