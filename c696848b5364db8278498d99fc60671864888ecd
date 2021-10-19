@@ -33,6 +33,23 @@
       "message": "If you replace /requirements.txt in this repo with the content of https://github.com/openstack-charmers/release-tools/blob/master/global/source-zaza/requirements.txt , this should fix the python 3.5 failures.",
       "revId": "c696848b5364db8278498d99fc60671864888ecd",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "781bbbe8_228177c8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34059
+      },
+      "writtenOn": "2021-10-19T22:33:24Z",
+      "side": 1,
+      "message": "update requirement.txt with following \ncffi\u003d\u003d1.14.6; python_version \u003c \u00273.6\u0027  # cffi 1.15.0 drops support for py35.",
+      "revId": "c696848b5364db8278498d99fc60671864888ecd",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
