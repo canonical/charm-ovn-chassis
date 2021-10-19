@@ -16,6 +16,23 @@
       "message": "\u003e Patch Set 2: Verified-1\n\u003e \n\u003e Build FAILURE by Canonical OpenStack Charm CI.\n\u003e \n\u003e Re-test comment options:\n\u003e \n\u003e - \u0027recheck\u0027 (run/re-run the default upstream and charm test sets)\n\u003e - \u0027charm-recheck\u0027 (run/re-run the default charm verify test set) with Jenkins and Zuul\n\u003e - \u0027zosci-recheck\u0027 (run/re-run the default charm verify test set) with only Zuul\n\u003e \n\u003e For more info, see http://docs.openstack.org/developer/charm-guide/ and https://wiki.openstack.org/wiki/ThirdPartySystems/Canonical_Charm_CI.\n\u003e \n\u003e \n\u003e - charm-build https://openstack-ci-reports.ubuntu.com/artifacts/e67/814444/2/check/charm-build/e67ac51/ : FAILURE in 7m 13s\n\u003e - osci-lint https://openstack-ci-reports.ubuntu.com/artifacts/959/814444/2/check/osci-lint/9599094/ : SUCCESS in 7m 05s\n\u003e - tox-py35 https://openstack-ci-reports.ubuntu.com/artifacts/926/814444/2/check/tox-py35/9263731/ : FAILURE in 6m 45s\n\u003e - tox-py36 https://openstack-ci-reports.ubuntu.com/artifacts/d97/814444/2/check/tox-py36/d971a50/ : SUCCESS in 6m 09s\n\u003e - tox-py37 https://openstack-ci-reports.ubuntu.com/artifacts/c20/814444/2/check/tox-py37/c20ddd6/ : SUCCESS in 5m 29s\n\u003e - tox-py38 https://openstack-ci-reports.ubuntu.com/artifacts/f2a/814444/2/check/tox-py38/f2a9b3e/ : SUCCESS in 7m 34s\n\u003e - bionic-train bionic-train : SKIPPED\n\u003e - bionic-ussuri bionic-ussuri : SKIPPED\n\u003e - focal focal : SKIPPED\n\u003e - hirsute hirsute : SKIPPED\n\u003e - impish impish : SKIPPED (non-voting)\n\nrecheck",
       "revId": "c696848b5364db8278498d99fc60671864888ecd",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0cc8aef5_951cfe82",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31289
+      },
+      "writtenOn": "2021-10-19T08:22:26Z",
+      "side": 1,
+      "message": "If you replace /requirements.txt in this repo with the content of https://github.com/openstack-charmers/release-tools/blob/master/global/source-zaza/requirements.txt , this should fix the python 3.5 failures.",
+      "revId": "c696848b5364db8278498d99fc60671864888ecd",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
