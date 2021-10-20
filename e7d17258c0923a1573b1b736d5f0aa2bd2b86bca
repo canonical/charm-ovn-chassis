@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "153f2903_24adfff7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31289
+      },
+      "writtenOn": "2021-10-20T08:34:43Z",
+      "side": 1,
+      "message": "It seems like you\u0027ll need the same fix in /test-requirements.txt too: https://github.com/openstack-charmers/release-tools/blob/master/global/source-zaza/test-requirements.txt#L6",
+      "revId": "e7d17258c0923a1573b1b736d5f0aa2bd2b86bca",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    }
+  ]
+}
