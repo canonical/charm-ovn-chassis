@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "910bc8da_d760dc6e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34059
+      },
+      "writtenOn": "2021-10-20T14:33:21Z",
+      "side": 1,
+      "message": "update test-requirements.txt",
+      "revId": "18c53e426f5dfde9dfd17a2e8036f390b2bf454e",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    }
+  ]
+}
