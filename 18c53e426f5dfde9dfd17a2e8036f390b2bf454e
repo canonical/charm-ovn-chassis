@@ -16,6 +16,23 @@
       "message": "update test-requirements.txt",
       "revId": "18c53e426f5dfde9dfd17a2e8036f390b2bf454e",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2fb808b8_b88ba13c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 30561
+      },
+      "writtenOn": "2021-10-20T16:36:44Z",
+      "side": 1,
+      "message": "README ok",
+      "revId": "18c53e426f5dfde9dfd17a2e8036f390b2bf454e",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
