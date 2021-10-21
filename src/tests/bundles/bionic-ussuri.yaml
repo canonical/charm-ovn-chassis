@@ -18,26 +18,21 @@ applications:
   mysql:
     charm: cs:~openstack-charmers/percona-cluster
     num_units: 1
-    channel: candidate
   vault:
     charm: cs:~openstack-charmers/vault
     num_units: 1
-    channel: candidate
   ovn-central:
     charm: cs:~openstack-charmers/ovn-central
     num_units: 3
     options:
       source: cloud:bionic-ussuri/proposed
-    channel: candidate
   magpie:
     charm: cs:~openstack-charmers/magpie
     num_units: 2
     options:
       source: cloud:bionic-ussuri/proposed
-    channel: candidate
   ovn-chassis:
     series: bionic
     charm: cs:~openstack-charmers/ovn-chassis
-    channel: candidate
   nrpe:
     charm: cs:nrpe
