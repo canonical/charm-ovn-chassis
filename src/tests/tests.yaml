@@ -11,6 +11,7 @@ smoke_bundles:
 dev_bundles:
 - hirsute
 - impish
+- jammy
 
 target_deploy_status:
   magpie:
@@ -41,3 +42,4 @@ tests_options:
   force_deploy:
     - hirsute  # as nrpe is deployed, and nrpe only supports LTS releases
     - impish   # as nrpe is deployed, and nrpe only supports LTS releases
+    - jammy   # as nrpe is deployed, and nrpe only supports LTS releases
