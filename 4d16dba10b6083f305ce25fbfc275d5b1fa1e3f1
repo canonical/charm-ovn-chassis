@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "671ec9e7_744450e4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 10
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11805
+      },
+      "writtenOn": "2021-11-18T19:46:54Z",
+      "side": 1,
+      "message": "I\u0027m working on a fix for the focal-xena+ test failures in https://pad.lv/1951462 (Note: function tests haven\u0027t reported back yet at this time but I\u0027m assuming this charm is also affected)",
+      "revId": "4d16dba10b6083f305ce25fbfc275d5b1fa1e3f1",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    }
+  ]
+}
