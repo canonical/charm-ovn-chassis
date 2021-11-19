@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "934595da_431a5f6d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 14
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11805
+      },
+      "writtenOn": "2021-11-19T20:53:56Z",
+      "side": 1,
+      "message": "hirsute-wallaby and focal-xena are failing as expected. These will be fixed by the WallabyOVNCHassisCHarm class change.",
+      "revId": "07d53f01e3d01f655bd47634f9c9651d355745a9",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    }
+  ]
+}
