@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fc65942e_1c809dd6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31289
+      },
+      "writtenOn": "2021-11-22T11:10:03Z",
+      "side": 1,
+      "message": "Focal-xena failed on a connection hiccup to GitHub but we can see that hirsute-wallaby succeeded, which proves that this fixes the original issue. ",
+      "revId": "eba0bce84087564a98834feea63940e31dc2191d",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    }
+  ]
+}
