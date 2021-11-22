@@ -16,6 +16,23 @@
       "message": "hirsute-wallaby and focal-xena are failing as expected. These will be fixed by the WallabyOVNCHassisCHarm class change.",
       "revId": "07d53f01e3d01f655bd47634f9c9651d355745a9",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "215d3525_9f8dade6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 14
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31289
+      },
+      "writtenOn": "2021-11-22T11:12:54Z",
+      "side": 1,
+      "message": "Dependent review https://review.opendev.org/c/x/charm-ovn-chassis/+/818593 passed CI, so I\u0027m happy to land this one as well, however one of my comments hasn\u0027t been addressed. Re-posting inline. Everything else LGTM",
+      "revId": "07d53f01e3d01f655bd47634f9c9651d355745a9",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
