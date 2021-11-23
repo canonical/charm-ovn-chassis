@@ -16,6 +16,23 @@
       "message": "charm-recheck\n\nDNS issue",
       "revId": "4e52cd24ca6f984b977d92bb43fdc2bf3ee145f4",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a25ca410_e29832ae",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31289
+      },
+      "writtenOn": "2021-11-23T09:05:15Z",
+      "side": 1,
+      "message": "return _get_special_codename(version, OVN_CODENAMES) -\u003e IndexError: list index out of range",
+      "revId": "4e52cd24ca6f984b977d92bb43fdc2bf3ee145f4",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
