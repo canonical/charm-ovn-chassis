@@ -33,6 +33,41 @@
       "message": "return _get_special_codename(version, OVN_CODENAMES) -\u003e IndexError: list index out of range",
       "revId": "4e52cd24ca6f984b977d92bb43fdc2bf3ee145f4",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bd736c83_21a3a67c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11805
+      },
+      "writtenOn": "2021-11-23T14:46:23Z",
+      "side": 1,
+      "message": "I think there may be a chicken/egg issue with other ovn charms. ovn-central landed though so maybe that will fix it.",
+      "parentUuid": "a25ca410_e29832ae",
+      "revId": "4e52cd24ca6f984b977d92bb43fdc2bf3ee145f4",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9d09e542_e1626706",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11805
+      },
+      "writtenOn": "2021-11-23T14:46:23Z",
+      "side": 1,
+      "message": "charm-recheck",
+      "revId": "4e52cd24ca6f984b977d92bb43fdc2bf3ee145f4",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
