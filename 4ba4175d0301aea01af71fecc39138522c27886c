@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d7681a42_f0ce79eb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 15
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11805
+      },
+      "writtenOn": "2021-11-23T19:27:28Z",
+      "side": 1,
+      "message": "I ran focal-xena on locally and it is still picking up the old ovn-central. https://jaas.ai/u/openstack-charmers-next/ovn-central is defaulting to #68 when it should be at #69.",
+      "revId": "4ba4175d0301aea01af71fecc39138522c27886c",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    }
+  ]
+}
