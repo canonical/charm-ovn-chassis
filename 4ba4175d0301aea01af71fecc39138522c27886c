@@ -34,6 +34,23 @@
       "parentUuid": "d7681a42_f0ce79eb",
       "revId": "4ba4175d0301aea01af71fecc39138522c27886c",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6edbb9d9_fe75acb6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 15
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31289
+      },
+      "writtenOn": "2021-11-29T15:24:47Z",
+      "side": 1,
+      "message": "The mentioned charm version problem has been solved meanwhile, plus a dependent review https://review.opendev.org/c/x/charm-ovn-chassis/+/818593 has passed Canonical CI. Landing",
+      "revId": "4ba4175d0301aea01af71fecc39138522c27886c",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
