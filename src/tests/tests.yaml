@@ -1,17 +1,16 @@
 charm_name: ovn-chassis
 
 gate_bundles:
-- bionic-ussuri
-- focal
-- hirsute
-- impish
+- focal-wallaby
+- focal-xena
+- impish-xena
 
 smoke_bundles:
-- focal
+- focal-xena
 
 dev_bundles:
-- bionic-train
-- jammy
+- focal-yoga
+- jammy-yoga
 
 target_deploy_status:
   magpie:
@@ -40,6 +39,5 @@ tests:
 
 tests_options:
   force_deploy:
-    - hirsute  # as nrpe is deployed, and nrpe only supports LTS releases
-    - impish   # as nrpe is deployed, and nrpe only supports LTS releases
-    - jammy
+    - impish-xena   # as nrpe is deployed, and nrpe only supports LTS releases
+    - jammy-yoga
