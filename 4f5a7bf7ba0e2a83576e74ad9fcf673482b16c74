@@ -16,6 +16,23 @@
       "message": "zosci-recheck",
       "revId": "4f5a7bf7ba0e2a83576e74ad9fcf673482b16c74",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1eded81e_f071701e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31289
+      },
+      "writtenOn": "2022-02-07T08:41:37Z",
+      "side": 1,
+      "message": "LGTM, thanks! Unrelated magpie DNS-related failure (also seen in https://review.opendev.org/c/openstack/charm-magpie/+/827352 ), probably due to the recent migration OVS-\u003eOVN on the undercloud. This is green enough for this kind of review IMHO.",
+      "revId": "4f5a7bf7ba0e2a83576e74ad9fcf673482b16c74",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
