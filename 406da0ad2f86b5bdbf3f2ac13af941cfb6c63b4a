@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "46d8f9d7_fa4fe9f0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 935
+      },
+      "writtenOn": "2022-02-21T09:27:41Z",
+      "side": 1,
+      "message": "zosci-recheck",
+      "revId": "406da0ad2f86b5bdbf3f2ac13af941cfb6c63b4a",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    }
+  ]
+}
