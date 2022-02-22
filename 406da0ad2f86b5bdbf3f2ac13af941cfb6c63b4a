@@ -84,6 +84,23 @@
       "message": "charm-recheck",
       "revId": "406da0ad2f86b5bdbf3f2ac13af941cfb6c63b4a",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d61c8ca4_0999b660",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13686
+      },
+      "writtenOn": "2022-02-22T16:49:32Z",
+      "side": 1,
+      "message": "The bundles use the wrong magpie charm, raised a fix in https://review.opendev.org/c/x/charm-ovn-chassis/+/830480",
+      "revId": "406da0ad2f86b5bdbf3f2ac13af941cfb6c63b4a",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
