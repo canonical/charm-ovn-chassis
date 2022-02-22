@@ -67,6 +67,23 @@
       "message": "The last test run was run with the previous version of the magpie charm.\n\nThe new version was just published to charmhub [1].\n\n1: https://launchpad.net/~openstack-charmers/charm-magpie/+charm/charm-magpie.master.latest/+build/783",
       "revId": "406da0ad2f86b5bdbf3f2ac13af941cfb6c63b4a",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ca18adb8_d44543a8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13686
+      },
+      "writtenOn": "2022-02-22T13:12:09Z",
+      "side": 1,
+      "message": "charm-recheck",
+      "revId": "406da0ad2f86b5bdbf3f2ac13af941cfb6c63b4a",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
