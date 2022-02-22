@@ -16,6 +16,23 @@
       "message": "zosci-recheck",
       "revId": "406da0ad2f86b5bdbf3f2ac13af941cfb6c63b4a",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4d236425_1c3d3f32",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13686
+      },
+      "writtenOn": "2022-02-22T11:16:20Z",
+      "side": 1,
+      "message": "Latest failure:\nThis is a subordinate charm, and it uses magpie as its principle. The functional test code currently has hard coded lists of package versions to be able to determine from which UCA pocket the installed/available packages come from. Instead of keeping this list up to date we changed magpie so that it installs the ``openstack-release`` UCA package [0].\n\n0: https://review.opendev.org/c/openstack/charm-magpie/+/830323",
+      "revId": "406da0ad2f86b5bdbf3f2ac13af941cfb6c63b4a",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
