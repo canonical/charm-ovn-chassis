@@ -1,10 +1,11 @@
 charm_name: ovn-chassis
 
 gate_bundles:
-- focal
+- focal-wallaby
+- focal-xena
 
 smoke_bundles:
-- focal
+- focal-xena
 
 dev_bundles:
 

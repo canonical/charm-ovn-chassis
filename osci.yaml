@@ -3,7 +3,8 @@
       - charm-unit-jobs-py38
     check:
       jobs:
-        - focal
+        - focal-wallaby
+        - focal-xena
     vars:
       needs_charm_build: true
       charm_build_name: ovn-chassis
