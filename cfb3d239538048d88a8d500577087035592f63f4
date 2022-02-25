@@ -16,6 +16,23 @@
       "message": "Right, so the ovn-central charm is supposed to install the openstack-release package but it does not appear to do so.",
       "revId": "cfb3d239538048d88a8d500577087035592f63f4",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2253124d_56e75088",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13686
+      },
+      "writtenOn": "2022-02-25T21:27:55Z",
+      "side": 1,
+      "message": "charm-recheck",
+      "revId": "cfb3d239538048d88a8d500577087035592f63f4",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
