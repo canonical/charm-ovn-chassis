@@ -84,6 +84,23 @@
       "message": "charm-recheck",
       "revId": "cfb3d239538048d88a8d500577087035592f63f4",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7cb57f77_858e9eae",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13686
+      },
+      "writtenOn": "2022-02-26T12:07:13Z",
+      "side": 1,
+      "message": "The ovn-central charm comes from the candidate channel although the edge channel is specified. Missing publication of the latest changes?",
+      "revId": "cfb3d239538048d88a8d500577087035592f63f4",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
