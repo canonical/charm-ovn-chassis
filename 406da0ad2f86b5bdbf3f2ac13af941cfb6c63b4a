@@ -101,6 +101,23 @@
       "message": "The bundles use the wrong magpie charm, raised a fix in https://review.opendev.org/c/x/charm-ovn-chassis/+/830480",
       "revId": "406da0ad2f86b5bdbf3f2ac13af941cfb6c63b4a",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a064a226_f004a0f8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13686
+      },
+      "writtenOn": "2022-03-10T10:02:09Z",
+      "side": 1,
+      "message": "A fix in charms.openstack [0] and subsequent rebuild of ovn-central [1] has also been landed, but apparently there is currently no publication of the OVN charms.\n\n0: https://review.opendev.org/c/openstack/charms.openstack/+/830616\n1: https://review.opendev.org/c/x/charm-ovn-central/+/830617",
+      "revId": "406da0ad2f86b5bdbf3f2ac13af941cfb6c63b4a",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
