@@ -29,8 +29,8 @@
       "item": "layer:ovn",
       "url": "https://github.com/openstack-charmers/charm-layer-ovn.git",
       "vcs": null,
-      "branch": "refs/heads/master",
-      "commit": "54fcc43fa1d1c09bd79b18a22929b25fc7aeae75"
+      "branch": "0e971cb542ba79e3ad3b7c3e47d967764d5fc101",
+      "commit": "0e971cb542ba79e3ad3b7c3e47d967764d5fc101"
     },
     {
       "type": "layer",
@@ -164,15 +164,9 @@
     },
     {
       "type": "python_module",
-      "package": "Tempita",
-      "vcs": null,
-      "version": "0.4"
-    },
-    {
-      "type": "python_module",
       "package": "charms.openstack",
       "url": "git+https://github.com/openstack/charms.openstack.git",
-      "branch": "refs/heads/stable/21.10",
+      "branch": "stable/wallaby",
       "version": "10627ee5f991c268f174d6d100e218a0e1867af1",
       "vcs": "git"
     },
@@ -192,8 +186,8 @@
       "type": "python_module",
       "package": "charmhelpers",
       "url": "git+https://github.com/juju/charm-helpers.git",
-      "branch": "refs/heads/stable/21.10",
-      "version": "26efcd0da51d580f68ead2ca13c38f58766f8a14",
+      "branch": "stable/wallaby",
+      "version": "f8f822d5e908b1ac5694815c2d5522b6533e04f8",
       "vcs": "git"
     },
     {

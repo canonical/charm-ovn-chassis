@@ -1,7 +1,9 @@
-variables:
-  openstack-origin: &openstack-origin distro
+local_overlay_enabled: False
 
-series: impish
+variables:
+  openstack-origin: &openstack-origin cloud:focal-wallaby
+
+series: focal
 
 comment:
 - 'machines section to decide order of deployment. database sooner = faster'
@@ -22,10 +24,11 @@ machines:
 applications:
 
   vault-mysql-router:
-    charm: cs:~openstack-charmers/mysql-router
+    charm: ch:mysql-router
+    channel: 8.0.19/edge
 
   mysql-innodb-cluster:
-    charm: cs:~openstack-charmers/mysql-innodb-cluster
+    charm: ch:mysql-innodb-cluster
     num_units: 3
     options:
       source: *openstack-origin
@@ -33,19 +36,20 @@ applications:
       - '0'
       - '1'
       - '2'
+    channel: 8.0.19/edge
 
   vault:
-    charm: cs:~openstack-charmers/vault
+    charm: ch:vault
     num_units: 1
     to:
       - '3'
+    channel: 1.7/edge
 
   nrpe:
     charm: cs:nrpe
-    series: focal
 
   ovn-central:
-    charm: cs:~openstack-charmers/ovn-central
+    charm: ch:ovn-central
     num_units: 3
     options:
       source: *openstack-origin
@@ -53,16 +57,20 @@ applications:
       - '4'
       - '5'
       - '6'
+    channel: openstack-xena/edge
 
   magpie:
-    charm: cs:~openstack-charmers/magpie
+    charm: ch:magpie
     num_units: 2
+    options:
+      source: *openstack-origin
     to:
       - '7'
       - '8'
+    channel: latest/edge
 
   ovn-chassis:
-    charm: cs:~openstack-charmers/ovn-chassis
+    charm: ../../../ovn-chassis.charm
 
 relations:
 
