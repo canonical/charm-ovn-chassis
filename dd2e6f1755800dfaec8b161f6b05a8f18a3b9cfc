@@ -16,6 +16,23 @@
       "message": "CI out of resources:\ncannot run instance: Unauthorised URL http://10.245.161.158:8774/v2.1/servers\ncaused by: request (http://10.245.161.158:8774/v2.1/servers) returned unexpected status: 403; error info: {\"forbidden\": {\"code\": 403, \"message\": \"Quota exceeded for cores: Requested 2, but already used 1000 of 1000 cores\"}}",
       "revId": "dd2e6f1755800dfaec8b161f6b05a8f18a3b9cfc",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e4fd4765_8a1b78fc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13686
+      },
+      "writtenOn": "2022-04-01T21:26:02Z",
+      "side": 1,
+      "message": "charm-recheck",
+      "revId": "dd2e6f1755800dfaec8b161f6b05a8f18a3b9cfc",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
