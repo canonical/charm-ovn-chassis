@@ -16,6 +16,23 @@
       "message": "cchchacharcharmcharm-recheck",
       "revId": "50cc6ff8eff5be9a7e2dbf15261def5ecd29bd11",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c345c5ae_fa09b44e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13686
+      },
+      "writtenOn": "2022-04-08T15:57:30Z",
+      "side": 1,
+      "message": "Android...",
+      "revId": "50cc6ff8eff5be9a7e2dbf15261def5ecd29bd11",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
