@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "302dc3b8_bc7751c4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 20870
+      },
+      "writtenOn": "2022-04-10T17:40:59Z",
+      "side": 1,
+      "message": "LGTM - another +2 required (maybe?) for landing stable.",
+      "revId": "b8b966c885df5307350503ac93f55e1b9ed077e3",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    }
+  ]
+}
