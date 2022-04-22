@@ -57,6 +57,13 @@ applications:
     channel: latest/edge
 
   magpie:
+    # By default, when instance NUMA placement is not specified,
+    # a topology of N sockets, each with one core and one thread,
+    # is used for an instance, where N corresponds to the number of
+    # instance vCPUs requested.
+    #
+    # Let's use a 4 VCPU 2 socket flavor
+    constraints: "instance-type=twosocketm1.large"
     charm: ch:magpie
     num_units: 2
     options:
