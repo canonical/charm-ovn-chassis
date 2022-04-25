@@ -16,6 +16,23 @@
       "message": "charm-recheck",
       "revId": "39983f018f001a2d3190d11af5aaf29872d20fa2",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d1ab64ec_fab86f35",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13686
+      },
+      "writtenOn": "2022-04-25T14:55:44Z",
+      "side": 1,
+      "message": "Failure due to the DPDK EAL no longer accepting the --pci-whitelist argument.\n\nRef: https://github.com/DPDK/dpdk/commit/db27370b57202632ad8830352c1c0ee2dde4542f",
+      "revId": "39983f018f001a2d3190d11af5aaf29872d20fa2",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
