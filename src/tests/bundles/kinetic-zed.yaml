@@ -1,9 +1,9 @@
 variables:
-  openstack-origin: &openstack-origin cloud:focal-yoga
+  openstack-origin: &openstack-origin distro
 
 local_overlay_enabled: False
 
-series: focal
+series: kinetic
 
 comment:
 - 'machines section to decide order of deployment. database sooner = faster'
@@ -46,9 +46,6 @@ applications:
     to:
       - '3'
     channel: latest/edge
-
-  nrpe:
-    charm: cs:nrpe
 
   ovn-central:
     charm: ch:ovn-central
@@ -99,8 +96,3 @@ relations:
 
   - - 'ovn-chassis:certificates'
     - 'vault:certificates'
-
-  - - 'ovn-chassis:nrpe-external-master'
-    - 'nrpe:nrpe-external-master'
-  - - 'magpie:juju-info'
-    - 'nrpe:general-info'

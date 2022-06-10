@@ -49,7 +49,6 @@ applications:
 
   nrpe:
     charm: cs:nrpe
-    series: focal
 
   ovn-central:
     charm: ch:ovn-central
