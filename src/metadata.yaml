@@ -6,9 +6,6 @@ description: |
   Database and Switch.
 tags:
 - networking
-series:
-- focal
-- jammy
 subordinate: true
 extra-bindings:
   data:
