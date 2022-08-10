@@ -7,3 +7,6 @@ interfaces
 layers
 *.swp
 *.charm
+# code coverage artifacts
+.coverage
+report/ 

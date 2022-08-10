@@ -20,4 +20,38 @@ options:
     description: |
       Allow the charm and packages to restart services automatically when
       required.
-
+  enable-notrack-rules:
+    type: boolean
+    default: False
+    description: |
+      Disable netfilter connection tracking for the traffic that matches the rule criteria.
+      .
+      The rationale behind having this option is to help reducing the unnecessary load 
+      on nf_conntrack module. On a busy cloud environment, the amount of unique flows 
+      that OVN chassis manages can exceed the limit of netfilter connection table. 
+      This is the scenario for GENEVE/VXLAN packets, where source port of the connection
+      deliberately randomized to have an even distribution across multiple links[1].
+      Having a randomized source port changes the five-tuple that describes an unique 
+      connection and increases the amount of unique flows that nf_conntrack
+      tracks. This eventually leads to a full nf_conntrack table, which causes some 
+      connections to be dropped.
+      .
+      The NOTRACK rule criteria can be controlled via setting `notrack-rule-criteria` config.
+      .
+      [1]:(https://datatracker.ietf.org/doc/html/rfc8926#section-3.3)
+  notrack-rule-criteria:
+    type: string
+    # Semicolon separated list of iptables rule criteria
+    default:  "-p udp --dport 6081;" 
+    description: |
+      The rule criteria(s) for `enable-notrack-rules`. By default, it is set to UDP/6081 for 
+      excluding GENEVE traffic as per specified in RFC8926[1] as official IANA registered port[2].
+      . 
+      Each criteria will be used to make a new
+      rule in `juju-och-nfnotrack` chain, as shown in the pseudocode below:
+      . 
+      for each criteria in criterias:
+        execute `iptables -t raw -A juju-och-nfnotrack <criteria> -j NOTRACK`
+      .
+      [1]:(https://datatracker.ietf.org/doc/html/rfc8926#section-3.3)
+      [2]:(https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml?search=6081)
