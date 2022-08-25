@@ -1,0 +1,112 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7b79c9b9_e7ef73e0",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 13686
+      },
+      "writtenOn": "2022-08-25T11:35:36Z",
+      "side": 1,
+      "message": "This is a problem indeed, and charms should not really be involved in upbringing of a system.\n\nWhy not use the `iptables-persistent` / `netfilter-persistent` packages to persist the rules instead?",
+      "range": {
+        "startLine": 19,
+        "startChar": 0,
+        "endLine": 20,
+        "endChar": 56
+      },
+      "revId": "78581e90fb3abe002e9c2433cdef0815c598967d",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c2462a41_6ed9f5ba",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13686
+      },
+      "writtenOn": "2022-08-25T11:35:36Z",
+      "side": 1,
+      "message": "Hello, Mustafa,\n\nThank you for taking the time to work on this issue, that is much appreciated!\n\nI have a few comments in-line and a general feedback on the approach here:\n1) The organization of the ovn-chassis and ovn-dedicated-chassis charms are a bit special. This is because the charms share 99% of the code base but one is a subordinate charm while the other is a principal charm. To allow code sharing between the two, the entire chassis code base is hosted in the ovn layer hosted at [0].\n\nThis addition would be relevant for both charms, so please target that repository with your changes.\n\n2) While I commend your effort to generalize this code, and add extra helpers to attach and detach chains etc, I wonder if this is all a bit overkill for the problem at hand?\n\nThe `nft` and `iptables` tools are quite good at finding existing rules, and the rules we need to add are quite simple.\n\nWould it make sense to just add the rule to the PREROUTING and OUTPUT chains directly?\n\n3) The charm should not be involved in the upbringing of the system, would it make sense to use the Ubuntu `iptables-persistent` / `netfilter-persistent` packages for taking care of system initialization instead?\n\n0: https://github.com/openstack-charmers/charm-layer-ovn/",
+      "revId": "78581e90fb3abe002e9c2433cdef0815c598967d",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3cfc73da_a8d2972e",
+        "filename": "src/config.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 13686
+      },
+      "writtenOn": "2022-08-25T11:35:36Z",
+      "side": 1,
+      "message": "In essence this is a workaround for what to me appears like a long standing kernel bug.\n\nDoes this really need to be configurable at all?",
+      "revId": "78581e90fb3abe002e9c2433cdef0815c598967d",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "62ae3013_b4a8eead",
+        "filename": "src/lib/charm/openstack/basic_ipt_helper.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 13686
+      },
+      "writtenOn": "2022-08-25T11:35:36Z",
+      "side": 1,
+      "message": "While I commend your effort to generalize this code, and add extra helpers to attach and detach chains etc, I wonder if this is all a bit overkill for the problem at hand?\n\nThe `nft` and `iptables` tools are quite good at finding existing rules, and the rules we need to add are quite simple.\n\nWould it make sense to just add the two rules to the PREROUTING and OUTPUT chains directly?",
+      "revId": "78581e90fb3abe002e9c2433cdef0815c598967d",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d165d29b_20bc6bde",
+        "filename": "src/lib/charm/openstack/ovn_chassis.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 97,
+      "author": {
+        "id": 13686
+      },
+      "writtenOn": "2022-08-25T11:35:36Z",
+      "side": 1,
+      "message": "While I commend your effort to generalize this code, and add extra helpers to attach and detach chains etc, I wonder if this is all a bit overkill for the problem at hand?\n\nThe `nft` and `iptables` tools are quite good at finding existing rules, and the rules we need to add are quite simple.\n\nWould it make sense to just add the two rules to the PREROUTING and OUTPUT chains directly?",
+      "revId": "78581e90fb3abe002e9c2433cdef0815c598967d",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "18f8091e_d2b2b40f",
+        "filename": "src/tests/unit/__init__.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 13686
+      },
+      "writtenOn": "2022-08-25T11:35:36Z",
+      "side": 1,
+      "message": "The unit tests for reactive charms live in the top level `unit_tests` folder.\n\nFor this specific charm they actually live in a different repository as mentioned in unit_tests/README.md.",
+      "revId": "78581e90fb3abe002e9c2433cdef0815c598967d",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    }
+  ]
+}
