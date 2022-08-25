@@ -24,6 +24,30 @@
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     },
     {
+      "unresolved": true,
+      "key": {
+        "uuid": "8040d7d8_66dfd716",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 34980
+      },
+      "writtenOn": "2022-08-25T13:04:52Z",
+      "side": 1,
+      "message": "I believe the problem described here is a side effect of interaction between the system and the software managed by the charm. Many people are already hacking through it in various ways. In the end, that can lead to problems caused by these \"hacks\" and dialogues like, \"ah yes, somebody put a NOTRACK rule in the table two years ago. That\u0027s why the connections were failing\". The ability to mitigate this side effect in a controlled manner using a charm option would significantly decrease our support efforts and the number of related bug reports.",
+      "parentUuid": "7b79c9b9_e7ef73e0",
+      "range": {
+        "startLine": 19,
+        "startChar": 0,
+        "endLine": 20,
+        "endChar": 56
+      },
+      "revId": "78581e90fb3abe002e9c2433cdef0815c598967d",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
       "unresolved": false,
       "key": {
         "uuid": "c2462a41_6ed9f5ba",
@@ -37,6 +61,24 @@
       "writtenOn": "2022-08-25T11:35:36Z",
       "side": 1,
       "message": "Hello, Mustafa,\n\nThank you for taking the time to work on this issue, that is much appreciated!\n\nI have a few comments in-line and a general feedback on the approach here:\n1) The organization of the ovn-chassis and ovn-dedicated-chassis charms are a bit special. This is because the charms share 99% of the code base but one is a subordinate charm while the other is a principal charm. To allow code sharing between the two, the entire chassis code base is hosted in the ovn layer hosted at [0].\n\nThis addition would be relevant for both charms, so please target that repository with your changes.\n\n2) While I commend your effort to generalize this code, and add extra helpers to attach and detach chains etc, I wonder if this is all a bit overkill for the problem at hand?\n\nThe `nft` and `iptables` tools are quite good at finding existing rules, and the rules we need to add are quite simple.\n\nWould it make sense to just add the rule to the PREROUTING and OUTPUT chains directly?\n\n3) The charm should not be involved in the upbringing of the system, would it make sense to use the Ubuntu `iptables-persistent` / `netfilter-persistent` packages for taking care of system initialization instead?\n\n0: https://github.com/openstack-charmers/charm-layer-ovn/",
+      "revId": "78581e90fb3abe002e9c2433cdef0815c598967d",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "70b5992e_8e6599a6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34980
+      },
+      "writtenOn": "2022-08-25T13:04:52Z",
+      "side": 1,
+      "message": "Hello Frode,\n\nThank you for reviewing this and sharing your comments with me. I\u0027m pretty new in charm development, and everything is not immediately apparent. So in that aspect, I find your comments enlightening in many ways. Every single word counts :)\n\nFor 1, it makes sense; I\u0027ll re-target this MP to the OVN layer.\n\nFor 2 \u0026 3, I\u0027ve replied to their respective threads.",
+      "parentUuid": "c2462a41_6ed9f5ba",
       "revId": "78581e90fb3abe002e9c2433cdef0815c598967d",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     },
@@ -60,6 +102,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "706f969f_25abdf87",
+        "filename": "src/config.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 34980
+      },
+      "writtenOn": "2022-08-25T13:04:52Z",
+      "side": 1,
+      "message": "Well, I\u0027m unsure that we can consider this a kernel bug. nf_conntrack\u0027s job is to track the network flow lifecycle, so it does what it is designed for. From a networking perspective, GENEVE is altering the five-tuple that determines the \"ID\" of a network flow, so each flow is a `unique\u0027 network flow. As a result, nf_conntrack tracks every single GENEVE flow individually. That is not a flaw that we have in nf_conntrack. That is a flaw in how we identify unique network flows. The main problem here is that GENEVE is trying to leverage this flaw to achieve an even load distribution, which plays badly with nf_conntrack.\n\nI wanted this feature to be behind an option flag and opt-in because it might have unintended side effects.",
+      "parentUuid": "3cfc73da_a8d2972e",
+      "revId": "78581e90fb3abe002e9c2433cdef0815c598967d",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "62ae3013_b4a8eead",
         "filename": "src/lib/charm/openstack/basic_ipt_helper.py",
         "patchSetId": 1
@@ -71,6 +131,24 @@
       "writtenOn": "2022-08-25T11:35:36Z",
       "side": 1,
       "message": "While I commend your effort to generalize this code, and add extra helpers to attach and detach chains etc, I wonder if this is all a bit overkill for the problem at hand?\n\nThe `nft` and `iptables` tools are quite good at finding existing rules, and the rules we need to add are quite simple.\n\nWould it make sense to just add the two rules to the PREROUTING and OUTPUT chains directly?",
+      "revId": "78581e90fb3abe002e9c2433cdef0815c598967d",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "634a1981_18f02594",
+        "filename": "src/lib/charm/openstack/basic_ipt_helper.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 34980
+      },
+      "writtenOn": "2022-08-25T13:04:52Z",
+      "side": 1,
+      "message": "I wanted this design to have minimum disruption on the existing iptables layout. A dedicated chain eliminates rule duplication in tables and trivializes removing all added rules (e.g., simply detach/flush and delete the chain). The alternative is to iterate PREROUTING and OUTPUT chains, and find \u0026 erase the correct rules. The design also supports having an arbitrary number of NOTRACK rules for flexibility, so grouping them in a chain makes management more effortless. Having a dedicated chain also makes this operation transactional.\n\nAnother concern is that the user may have their NOTRACK rules in the chains (for whatever reasons), and I don\u0027t want to mess with them accidentally. I thought it would be safer to implement it this way.\n\nAlthough this problem seems specific to this charm, I think it might manifest itself in other charms as well, so having a reusable code for this stuff will make porting the changes more straightforward.",
+      "parentUuid": "62ae3013_b4a8eead",
       "revId": "78581e90fb3abe002e9c2433cdef0815c598967d",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     },
@@ -94,6 +172,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "e7aed93a_9a850ead",
+        "filename": "src/lib/charm/openstack/ovn_chassis.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 97,
+      "author": {
+        "id": 34980
+      },
+      "writtenOn": "2022-08-25T13:04:52Z",
+      "side": 1,
+      "message": "I wanted this design to have minimum disruption on the existing iptables layout. A dedicated chain eliminates rule duplication in tables and trivializes removing all added rules (e.g., simply detach/flush and delete the chain). The alternative is to iterate PREROUTING and OUTPUT chains, and find \u0026 erase the correct rules. The design also supports having an arbitrary number of NOTRACK rules for flexibility, so grouping them in a chain makes management more effortless. Having a dedicated chain also makes this operation transactional.\n\nAnother concern is that the user may have their NOTRACK rules in the chains (for whatever reasons), and I don\u0027t want to mess with them accidentally. I thought it would be safer to implement it this way.\n\nAlthough this problem seems specific to this charm, I think it might manifest itself in other charms as well, so having a reusable code for this stuff will make porting the changes more straightforward.",
+      "parentUuid": "d165d29b_20bc6bde",
+      "revId": "78581e90fb3abe002e9c2433cdef0815c598967d",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "18f8091e_d2b2b40f",
         "filename": "src/tests/unit/__init__.py",
         "patchSetId": 1
@@ -105,6 +201,24 @@
       "writtenOn": "2022-08-25T11:35:36Z",
       "side": 1,
       "message": "The unit tests for reactive charms live in the top level `unit_tests` folder.\n\nFor this specific charm they actually live in a different repository as mentioned in unit_tests/README.md.",
+      "revId": "78581e90fb3abe002e9c2433cdef0815c598967d",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "04554577_d082dae3",
+        "filename": "src/tests/unit/__init__.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 34980
+      },
+      "writtenOn": "2022-08-25T13:04:52Z",
+      "side": 1,
+      "message": "Well, I was unaware of that. Thanks for letting me know. Is there a reason for unit tests to live in a different repository? It is unusual.",
+      "parentUuid": "18f8091e_d2b2b40f",
       "revId": "78581e90fb3abe002e9c2433cdef0815c598967d",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
