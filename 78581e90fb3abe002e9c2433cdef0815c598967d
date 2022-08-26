@@ -48,6 +48,30 @@
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     },
     {
+      "unresolved": true,
+      "key": {
+        "uuid": "58d767ee_7f434507",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 13686
+      },
+      "writtenOn": "2022-08-26T06:04:05Z",
+      "side": 1,
+      "message": "About the configuration option:\nAdding a configuration option is like releasing an API, you can never stop supporting it, so I don\u0027t buy your argument. You\u0027re just putting the burden somewhere else.\n\nThe functionality you add is as we\u0027ve discovered required to operate a cloud at scale and our charms should be opinionated and just do the right thing for our users. This is clearly something the end user would not want nor need to know about.\n\nChanges in behavior like this is managed through new charm versions, tracks and channels.\n\n\nAbout system initialization:\nJust want to repeat that the charm code has to be outside the equation for bringing the system up to the expected state after a system reboot.\n\nThe charm\u0027s job is to install packages, enable configuration and services so that the system operates as expected, not be a required part of the boot process. So we either need to use one of the rule persistence services available in Ubuntu, or create some other mechanism for bringing the rule back on reboot that is independent of Juju and the charm.",
+      "parentUuid": "8040d7d8_66dfd716",
+      "range": {
+        "startLine": 19,
+        "startChar": 0,
+        "endLine": 20,
+        "endChar": 56
+      },
+      "revId": "78581e90fb3abe002e9c2433cdef0815c598967d",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
       "unresolved": false,
       "key": {
         "uuid": "c2462a41_6ed9f5ba",
@@ -120,6 +144,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "344d4cbc_8dd25ee6",
+        "filename": "src/config.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 13686
+      },
+      "writtenOn": "2022-08-26T06:04:05Z",
+      "side": 1,
+      "message": "When everyone has to hack around this side effect, it\u0027s a clear sign there is changes needed in the kernel. It will take time but we\u0027ll eventually get this fixed there for sure.\n\nIn the mean time we do indeed need to work around this for existing users, and the best thing to do would be to make sure there chances of unintended side effects is as small as possible.",
+      "parentUuid": "706f969f_25abdf87",
+      "revId": "78581e90fb3abe002e9c2433cdef0815c598967d",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "62ae3013_b4a8eead",
         "filename": "src/lib/charm/openstack/basic_ipt_helper.py",
         "patchSetId": 1
@@ -149,6 +191,24 @@
       "side": 1,
       "message": "I wanted this design to have minimum disruption on the existing iptables layout. A dedicated chain eliminates rule duplication in tables and trivializes removing all added rules (e.g., simply detach/flush and delete the chain). The alternative is to iterate PREROUTING and OUTPUT chains, and find \u0026 erase the correct rules. The design also supports having an arbitrary number of NOTRACK rules for flexibility, so grouping them in a chain makes management more effortless. Having a dedicated chain also makes this operation transactional.\n\nAnother concern is that the user may have their NOTRACK rules in the chains (for whatever reasons), and I don\u0027t want to mess with them accidentally. I thought it would be safer to implement it this way.\n\nAlthough this problem seems specific to this charm, I think it might manifest itself in other charms as well, so having a reusable code for this stuff will make porting the changes more straightforward.",
       "parentUuid": "62ae3013_b4a8eead",
+      "revId": "78581e90fb3abe002e9c2433cdef0815c598967d",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "11813a1c_00e978ce",
+        "filename": "src/lib/charm/openstack/basic_ipt_helper.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 13686
+      },
+      "writtenOn": "2022-08-26T06:04:05Z",
+      "side": 1,
+      "message": "For this specific use case there is very little room for variation for the rules we need to maintain, so a simple `iptables -C` call to check if the rule is already there before inserting would be sufficient. If it\u0027s there, either because we or someone else put it there, we don\u0027t need to do anything.\n\nThe charm would know what rules are needed depending on what encap the chassis uses, so there is no need for this to be configurable. At this point in time only Geneve is supported by the charms.\n\nThinking about future re-usability for the code is a great trait, but do wait until you actually have more than one place to use it before creating a generic reusable function/class. Otherwise you will just end up with unnecessary code to maintain (and potential bugs) if it turns out you didn\u0027t need it elsewhere.",
+      "parentUuid": "634a1981_18f02594",
       "revId": "78581e90fb3abe002e9c2433cdef0815c598967d",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     },
@@ -190,6 +250,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "1b4528ee_81dfa836",
+        "filename": "src/lib/charm/openstack/ovn_chassis.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 97,
+      "author": {
+        "id": 13686
+      },
+      "writtenOn": "2022-08-26T06:04:05Z",
+      "side": 1,
+      "message": "For this specific use case there is very little room for variation for the rules we need to maintain, so a simple `iptables -C` call to check if the rule is already there before inserting would be sufficient. If it\u0027s there, either because we or someone else put it there, we don\u0027t need to do anything.\n\nThe charm would know what rules are needed depending on what encap the chassis uses, so there is no need for this to be configurable. At this point in time only Geneve is supported by the charms.\n\nThinking about future re-usability for the code is a great trait, but do wait until you actually have more than one place to use it before creating a generic reusable function/class. Otherwise you will just end up with unnecessary code to maintain (and potential bugs) if it turns out you didn\u0027t need it elsewhere.",
+      "parentUuid": "e7aed93a_9a850ead",
+      "revId": "78581e90fb3abe002e9c2433cdef0815c598967d",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "18f8091e_d2b2b40f",
         "filename": "src/tests/unit/__init__.py",
         "patchSetId": 1
@@ -219,6 +297,24 @@
       "side": 1,
       "message": "Well, I was unaware of that. Thanks for letting me know. Is there a reason for unit tests to live in a different repository? It is unusual.",
       "parentUuid": "18f8091e_d2b2b40f",
+      "revId": "78581e90fb3abe002e9c2433cdef0815c598967d",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2d8b2523_77b24d85",
+        "filename": "src/tests/unit/__init__.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 13686
+      },
+      "writtenOn": "2022-08-26T06:04:05Z",
+      "side": 1,
+      "message": "Well, since the charm code lives in a different repository, it\u0027s not that unusual :-)",
+      "parentUuid": "04554577_d082dae3",
       "revId": "78581e90fb3abe002e9c2433cdef0815c598967d",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
