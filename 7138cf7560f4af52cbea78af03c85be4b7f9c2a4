@@ -33,6 +33,23 @@
       "message": "2022-08-27 06:30:23.908954 | focal-medium | 2022-08-27 06:30:23 [ERROR] unit-ovn-dedicated-chassis-1.log: 2022-08-27 06:29:20 WARNING unit.ovn-dedicated-chassis/1.install logger.go:60       ERROR: Could not find a version that satisfies the requirement setuptools\u003e\u003d42 (from versions: 41.6.0)\n",
       "revId": "7138cf7560f4af52cbea78af03c85be4b7f9c2a4",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9ea0ac4d_9ead1d1f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24824
+      },
+      "writtenOn": "2022-08-29T20:02:38Z",
+      "side": 1,
+      "message": "recheck",
+      "revId": "7138cf7560f4af52cbea78af03c85be4b7f9c2a4",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
