@@ -4,6 +4,6 @@
 *.pyc
 build
 interfaces
-layers
+# layers
 *.swp
 *.charm
