@@ -72,6 +72,30 @@
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     },
     {
+      "unresolved": true,
+      "key": {
+        "uuid": "6c3ae7df_e4699dec",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 34980
+      },
+      "writtenOn": "2022-09-01T12:52:57Z",
+      "side": 1,
+      "message": "Hello Frode, sorry for the late response, I was on PTO. Ack, I\u0027ll submit a bare-bone, simple patch to the base charm code.",
+      "parentUuid": "58d767ee_7f434507",
+      "range": {
+        "startLine": 19,
+        "startChar": 0,
+        "endLine": 20,
+        "endChar": 56
+      },
+      "revId": "78581e90fb3abe002e9c2433cdef0815c598967d",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
       "unresolved": false,
       "key": {
         "uuid": "c2462a41_6ed9f5ba",
