@@ -33,6 +33,23 @@
       "message": "recheck",
       "revId": "06bd39b1065d4050ed762fb97bb843c78ac23a72",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5d037d1b_00e04b43",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 14
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24824
+      },
+      "writtenOn": "2022-09-06T12:04:30Z",
+      "side": 1,
+      "message": "Tried it locally:\n\nroot@juju-0ff637-zaza-69556117bb2f-8:/var/lib/juju/agents/unit-ovn-chassis-0/charm# grep jsonschema wheelhouse.txt \njsonschema\u003c4.6\n\nroot@juju-0ff637-zaza-69556117bb2f-8:/var/lib/juju/agents/unit-ovn-chassis-0/charm# find wheelhouse/ -name jsonschema*\nwheelhouse/jsonschema-3.2.0.tar.gz\n\nThe jsonschema pin is in but there is a different issue still:\n\nhttps://paste.opendev.org/show/bLFUM97CeNMRErKYgLJH/\n\nunit-ovn-chassis-0: 11:56:05 DEBUG unit.ovn-chassis/0.install Processing ./wheelhouse/pyrsistent-0.18.0.tar.gz\nunit-ovn-chassis-0: 11:56:05 DEBUG unit.ovn-chassis/0.install   Installing build dependencies: started\nunit-ovn-chassis-0: 11:56:08 DEBUG unit.ovn-chassis/0.install   Installing build dependencies: finished with status \u0027error\u0027\nunit-ovn-chassis-0: 11:56:08 WARNING unit.ovn-chassis/0.install   error: subprocess-exited-with-error\nunit-ovn-chassis-0: 11:56:08 WARNING unit.ovn-chassis/0.install   \nunit-ovn-chassis-0: 11:56:08 WARNING unit.ovn-chassis/0.install   × pip subprocess to install build dependencies did not run successfully.\nunit-ovn-chassis-0: 11:56:08 WARNING unit.ovn-chassis/0.install   │ exit code: 1\nunit-ovn-chassis-0: 11:56:08 WARNING unit.ovn-chassis/0.install   ╰─\u003e [3 lines of output]\nunit-ovn-chassis-0: 11:56:08 WARNING unit.ovn-chassis/0.install       Looking in links: wheelhouse\nunit-ovn-chassis-0: 11:56:08 WARNING unit.ovn-chassis/0.install       ERROR: Could not find a version that satisfies the requirement setuptools\u003e\u003d42 (from versions: 41.6.0)\nunit-ovn-chassis-0: 11:56:08 WARNING unit.ovn-chassis/0.install       ERROR: No matching distribution found for setuptools\u003e\u003d42\nunit-ovn-chassis-0: 11:56:08 WARNING unit.ovn-chassis/0.install       [end of output]\nunit-ovn-chassis-0: 11:56:08 WARNING unit.ovn-chassis/0.install   \nunit-ovn-chassis-0: 11:56:08 WARNING unit.ovn-chassis/0.install   note: This error originates from a subprocess, and is likely not a problem with pip.\nunit-ovn-chassis-0: 11:56:08 WARNING unit.ovn-chassis/0.install error: subprocess-exited-with-error\nunit-ovn-chassis-0: 11:56:08 WARNING unit.ovn-chassis/0.install \nunit-ovn-chassis-0: 11:56:08 WARNING unit.ovn-chassis/0.install × pip subprocess to install build dependencies did not run successfully.\nunit-ovn-chassis-0: 11:56:08 WARNING unit.ovn-chassis/0.install │ exit code: 1\nunit-ovn-chassis-0: 11:56:08 WARNING unit.ovn-chassis/0.install ╰─\u003e See above for output.\n\n\n",
+      "revId": "06bd39b1065d4050ed762fb97bb843c78ac23a72",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
