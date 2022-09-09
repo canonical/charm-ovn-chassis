@@ -33,6 +33,24 @@
       "message": "This would produce a `ovn-chassis_ubuntu-20.04-amd64_ubuntu-22.04-amd64.charm` which is not what we want. The Focal wheels won\u0027t work on Jammy.\n\nWe need to repeat the full build-on/run-on pair for each series, i.e:\n\n    bases:\n      - build-on:\n          - name: ubuntu\n            channel: \"20.04\"\n            architectures: [amd64, s390x, ppc64el, arm64]\n        run-on:\n          - name: ubuntu\n            channel: \"20.04\"\n      - build-on:\n          - name: ubuntu\n            channel: \"22.04\"\n            architectures: [amd64, s390x, ppc64el, arm64]\n        run-on:\n          - name: ubuntu\n            channel: \"22.04\"",
       "revId": "51ffd40a0f2ba49448daf400495f2c73bbbe1530",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "137cb340_6f31dc51",
+        "filename": "charmcraft.yaml",
+        "patchSetId": 4
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 24824
+      },
+      "writtenOn": "2022-09-09T09:43:39Z",
+      "side": 1,
+      "message": "Ack, done.",
+      "parentUuid": "9b4f886a_84c2ddc5",
+      "revId": "51ffd40a0f2ba49448daf400495f2c73bbbe1530",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
