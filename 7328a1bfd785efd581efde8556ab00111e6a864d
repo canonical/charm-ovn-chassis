@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "be648222_20f956df",
+        "filename": "charmcraft.yaml",
+        "patchSetId": 5
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 13686
+      },
+      "writtenOn": "2022-09-09T09:54:45Z",
+      "side": 1,
+      "message": "It chokes on indentation, a missing space here.",
+      "revId": "7328a1bfd785efd581efde8556ab00111e6a864d",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    }
+  ]
+}
