@@ -16,6 +16,24 @@
       "message": "It chokes on indentation, a missing space here.",
       "revId": "7328a1bfd785efd581efde8556ab00111e6a864d",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b458a1d1_2513675d",
+        "filename": "charmcraft.yaml",
+        "patchSetId": 5
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 24824
+      },
+      "writtenOn": "2022-09-09T10:19:41Z",
+      "side": 1,
+      "message": "My bad, didn\u0027t try it locally the last time.",
+      "parentUuid": "be648222_20f956df",
+      "revId": "7328a1bfd785efd581efde8556ab00111e6a864d",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
