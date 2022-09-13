@@ -33,6 +33,23 @@
       "message": "recheck",
       "revId": "9c7428794d267b993f5fbc87f658656e4cccfa15",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "25431103_70783af8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24824
+      },
+      "writtenOn": "2022-09-13T16:34:59Z",
+      "side": 1,
+      "message": "It is unclear from the log what the error is:\n\n  nrpe/0                 error        idle            172.16.0.151    icmp,5666/tcp      hook failed: \"config-changed\"\n  \n  \n2022-09-13 15:02:26 INFO juju.worker.uniter resolver.go:145 awaiting error resolution for \"config-changed\" hook\n2022-09-13 15:02:26 DEBUG juju.worker.uniter agent.go:20 [AGENT-STATUS] error: hook failed: \"config-changed\"\n2022-09-13 15:02:26 DEBUG juju.worker.uniter.remotestate watcher.go:489 got unit change for nrpe/0\n2022-09-13 15:02:26 INFO juju.worker.uniter resolver.go:145 awaiting error resolution for \"config-changed\" hook\n2022-09-13 15:06:52 DEBUG juju.worker.uniter.remotestate watcher.go:666 update status timer triggered for nrpe/0\n2022-09-13 15:06:52 INFO juju.worker.uniter resolver.go:145 awaiting error resolution for \"config-changed\" hook\n  \n",
+      "revId": "9c7428794d267b993f5fbc87f658656e4cccfa15",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
