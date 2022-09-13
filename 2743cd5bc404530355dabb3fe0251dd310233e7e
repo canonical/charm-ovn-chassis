@@ -16,6 +16,23 @@
       "message": "Retesting with https://github.com/juju/charm-helpers/pull/731 and https://github.com/openstack-charmers/charm-layer-ovn/pull/70 landed.",
       "revId": "2743cd5bc404530355dabb3fe0251dd310233e7e",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "875b382a_110b96f7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 21
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24824
+      },
+      "writtenOn": "2022-09-13T12:56:30Z",
+      "side": 1,
+      "message": "recheck",
+      "revId": "2743cd5bc404530355dabb3fe0251dd310233e7e",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
