@@ -33,6 +33,23 @@
       "message": "https://github.com/openstack-charmers/zaza-openstack-tests/pull/909",
       "revId": "e0096394933230797b3d7dc3b377e691211fc45f",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ca73de5d_402ae84d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13686
+      },
+      "writtenOn": "2022-09-14T07:10:25Z",
+      "side": 1,
+      "message": "charm-recheck",
+      "revId": "e0096394933230797b3d7dc3b377e691211fc45f",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
