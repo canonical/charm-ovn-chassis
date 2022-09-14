@@ -101,6 +101,23 @@
       "message": "2022-09-14 10:14:48.751565 | focal-medium | 2022-09-14 10:14:48 [ERROR] Model default_alias (zaza-af4f94bc5dc2)\n2022-09-14 10:14:49.984119 | focal-medium | Traceback (most recent call last):\n2022-09-14 10:14:49.984202 | focal-medium |   File \"/home/ubuntu/src/review.opendev.org/x/charm-ovn-chassis/src/.tox/func-target/lib/python3.8/site-packages/urllib3/connectionpool.py\", line 703, in urlopen\n2022-09-14 10:14:49.984238 | focal-medium |     httplib_response \u003d self._make_request(\n2022-09-14 10:14:49.984251 | focal-medium |   File \"/home/ubuntu/src/review.opendev.org/x/charm-ovn-chassis/src/.tox/func-target/lib/python3.8/site-packages/urllib3/connectionpool.py\", line 449, in _make_request\n2022-09-14 10:14:49.984282 | focal-medium |     six.raise_from(e, None)\n2022-09-14 10:14:49.984294 | focal-medium |   File \"\u003cstring\u003e\", line 3, in raise_from\n2022-09-14 10:14:49.984306 | focal-medium |   File \"/home/ubuntu/src/review.opendev.org/x/charm-ovn-chassis/src/.tox/func-target/lib/python3.8/site-packages/urllib3/connectionpool.py\", line 444, in _make_request\n2022-09-14 10:14:49.984318 | focal-medium |     httplib_response \u003d conn.getresponse()\n2022-09-14 10:14:49.984332 | focal-medium |   File \"/usr/lib/python3.8/http/client.py\", line 1348, in getresponse\n2022-09-14 10:14:49.984348 | focal-medium |     response.begin()\n2022-09-14 10:14:49.984359 | focal-medium |   File \"/usr/lib/python3.8/http/client.py\", line 316, in begin\n2022-09-14 10:14:49.984386 | focal-medium |     version, status, reason \u003d self._read_status()\n2022-09-14 10:14:49.984399 | focal-medium |   File \"/usr/lib/python3.8/http/client.py\", line 285, in _read_status\n2022-09-14 10:14:49.984410 | focal-medium |     raise RemoteDisconnected(\"Remote end closed connection without\"\n2022-09-14 10:14:49.984420 | focal-medium | http.client.RemoteDisconnected: Remote end closed connection without response\n",
       "revId": "e0096394933230797b3d7dc3b377e691211fc45f",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1eab8e9a_1a546ff0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24824
+      },
+      "writtenOn": "2022-09-14T12:46:35Z",
+      "side": 1,
+      "message": "recheck",
+      "revId": "e0096394933230797b3d7dc3b377e691211fc45f",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
