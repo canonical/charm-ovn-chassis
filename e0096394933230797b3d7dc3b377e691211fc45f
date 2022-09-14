@@ -50,6 +50,23 @@
       "message": "charm-recheck",
       "revId": "e0096394933230797b3d7dc3b377e691211fc45f",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7c5cc950_3114ad46",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13686
+      },
+      "writtenOn": "2022-09-14T09:24:43Z",
+      "side": 1,
+      "message": "2022-09-14 08:49:32.182909 | focal-medium | novaclient.exceptions.ClientException: Unexpected API Error. Please report this at http://bugs.launchpad.net/nova/ and attach the Nova API log if possible.\n2022-09-14 08:49:32.182933 | focal-medium | \u003cclass \u0027nova.exception_Remote.PortBindingFailed_Remote\u0027\u003e (HTTP 500) (Request-ID: req-5d341516-2968-4bba-9674-8daede953f91)\n\nCI infra issue",
+      "revId": "e0096394933230797b3d7dc3b377e691211fc45f",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
