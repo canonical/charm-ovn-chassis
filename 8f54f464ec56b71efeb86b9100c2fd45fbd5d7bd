@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bbf195fc_06ad6e49",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 20870
+      },
+      "writtenOn": "2022-09-15T11:25:52Z",
+      "side": 1,
+      "message": "LGTM; landing without Canonical CI as the top of the stack has passed all tests.",
+      "revId": "8f54f464ec56b71efeb86b9100c2fd45fbd5d7bd",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    }
+  ]
+}
