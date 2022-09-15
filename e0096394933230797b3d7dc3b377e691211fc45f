@@ -169,6 +169,23 @@
       "message": "Filed https://bugs.launchpad.net/juju/+bug/1989629 regarding the spurious hook failures.",
       "revId": "e0096394933230797b3d7dc3b377e691211fc45f",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3808dbe7_3dca6260",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24824
+      },
+      "writtenOn": "2022-09-15T08:15:05Z",
+      "side": 1,
+      "message": "Now it\u0027s something else:\n\n2022-09-14 23:47:20 ERROR unit.ovn-chassis/0.juju-log server.go:316 Hook error:\nTraceback (most recent call last):\n  File \"/var/lib/juju/agents/unit-ovn-chassis-0/.venv/lib/python3.8/site-packages/charms/reactive/__init__.py\", line 74, in main\n    bus.dispatch(restricted\u003drestricted_mode)\n  File \"/var/lib/juju/agents/unit-ovn-chassis-0/.venv/lib/python3.8/site-packages/charms/reactive/bus.py\", line 390, in dispatch\n    _invoke(other_handlers)\n  File \"/var/lib/juju/agents/unit-ovn-chassis-0/.venv/lib/python3.8/site-packages/charms/reactive/bus.py\", line 359, in _invoke\n    handler.invoke()\n  File \"/var/lib/juju/agents/unit-ovn-chassis-0/.venv/lib/python3.8/site-packages/charms/reactive/bus.py\", line 181, in invoke\n    self._action(*args)\n  File \"/var/lib/juju/agents/unit-ovn-chassis-0/charm/reactive/ovn_chassis_charm_handlers.py\", line 91, in configure_ovs\n    charm_instance.configure_ovs(\n  File \"/var/lib/juju/agents/unit-ovn-chassis-0/charm/lib/charms/ovn_charm.py\", line 178, in configure_ovs\n    super().configure_ovs(sb_conn, mlockall_changed)\n  File \"/var/lib/juju/agents/unit-ovn-chassis-0/charm/lib/charms/ovn_charm.py\", line 1037, in configure_ovs\n    self.configure_ovs_hw_offload() | self.configure_ovs_dpdk())\n  File \"/var/lib/juju/agents/unit-ovn-chassis-0/charm/lib/charms/ovn_charm.py\", line 918, in configure_ovs_dpdk\n    self.dpdk_eal_allow_devices(dpdk_context.devices())\n  File \"/var/lib/juju/agents/unit-ovn-chassis-0/charm/lib/charms/ovn_charm.py\", line 884, in dpdk_eal_allow_devices\n    if ch_core.host.cmp_pkgrevno(\u0027dpdk\u0027, \u002720.11.3\u0027) \u003e\u003d 0:\n  File \"/var/lib/juju/agents/unit-ovn-chassis-0/.venv/lib/python3.8/site-packages/charmhelpers/core/host_factory/ubuntu.py\", line 110, in cmp_pkgrevno\n    return apt_pkg.version_compare(current_ver.ver_str, revno)\nAttributeError: \u0027NoneType\u0027 object has no attribute \u0027ver_str\u0027",
+      "revId": "e0096394933230797b3d7dc3b377e691211fc45f",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
