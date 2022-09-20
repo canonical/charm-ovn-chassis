@@ -16,6 +16,23 @@
       "message": "charm-recheck",
       "revId": "70490fc443cd4f90db2b28b7afae4788bf46dc6b",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "89be1828_527c310d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24824
+      },
+      "writtenOn": "2022-09-20T20:30:52Z",
+      "side": 1,
+      "message": "My bad, some more changes are needed indeed:\n\n2022-09-20 19:54:21.160965 | focal-medium | 2022-09-20 19:54:21 [INFO] ERROR: test_enable_dpdk (zaza.openstack.charm_tests.ovn.tests.DPDKTest)\n2022-09-20 19:54:21.161518 | focal-medium | 2022-09-20 19:54:21 [INFO] Confirm that transitioning to/from DPDK works.\n2022-09-20 19:54:21.161670 | focal-medium | 2022-09-20 19:54:21 [INFO] ----------------------------------------------------------------------\n2022-09-20 19:54:21.161977 | focal-medium | 2022-09-20 19:54:21 [INFO] Traceback (most recent call last):\n2022-09-20 19:54:21.162211 | focal-medium | 2022-09-20 19:54:21 [INFO]   File \"/home/ubuntu/src/review.opendev.org/x/charm-ovn-chassis/src/.tox/func-target/lib/python3.8/site-packages/zaza/openstack/charm_tests/ovn/tests.py\", line 306, in test_enable_dpdk\n2022-09-20 19:54:21.164349 | focal-medium | 2022-09-20 19:54:21 [INFO]     self._dpdk_pre_post_flight_check()\n2022-09-20 19:54:21.164388 | focal-medium | 2022-09-20 19:54:21 [INFO] AttributeError: \u0027DPDKTest\u0027 object has no attribute \u0027_dpdk_pre_post_flight_check",
+      "revId": "70490fc443cd4f90db2b28b7afae4788bf46dc6b",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
