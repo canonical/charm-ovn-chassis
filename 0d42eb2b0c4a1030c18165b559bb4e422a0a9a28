@@ -1,0 +1,9 @@
+Verified+1: Canonical CI <uosci-testing-bot@ubuntu.com>
+Verified+2: Zuul
+Code-Review+2: Frode Nordahl <frode.nordahl@canonical.com>
+Workflow+1: Frode Nordahl <frode.nordahl@canonical.com>
+Submitted-by: Zuul
+Submitted-at: Wed, 21 Sep 2022 07:23:39 +0000
+Reviewed-on: https://review.opendev.org/c/x/charm-ovn-chassis/+/858531
+Project: x/charm-ovn-chassis
+Branch: refs/heads/master
