@@ -1,10 +1,15 @@
 type: charm
 
 parts:
+  charm-tools:
+    plugin: nil
+    override-build: |
+      snap install --classic --channel latest/edge/issue-632 charm
   charm:
+    after: [charm-tools]
     plugin: reactive
     reactive-charm-build-arguments:
-      - --binary-wheels-from-source
+      - --binary-wheels
     build-packages:
       - tox
       - git
@@ -12,8 +17,8 @@ parts:
       - libpython3-dev
       - libffi-dev
     source: src/
-    build-snaps:
-      - charm/latest/edge
+    # build-snaps:
+    #   - charm/latest/edge
     build-environment:
       - CHARM_INTERFACES_DIR: $CRAFT_PROJECT_DIR/interfaces/
       - CHARM_LAYERS_DIR: $CRAFT_PROJECT_DIR/layers/
