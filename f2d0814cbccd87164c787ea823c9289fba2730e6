@@ -16,6 +16,23 @@
       "message": "Waiting on func tests.",
       "revId": "f2d0814cbccd87164c787ea823c9289fba2730e6",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "897a1796_42d76fec",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13686
+      },
+      "writtenOn": "2022-09-23T18:41:17Z",
+      "side": 1,
+      "message": "charm-recheck",
+      "revId": "f2d0814cbccd87164c787ea823c9289fba2730e6",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
