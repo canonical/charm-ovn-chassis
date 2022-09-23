@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "467d547a_50dd29c0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13686
+      },
+      "writtenOn": "2022-09-23T14:42:50Z",
+      "side": 1,
+      "message": "Wait until we have stable releases of charmcraft and charm-tools before moving ahead with this.",
+      "revId": "7c16c67133778940c4fce74bbcacb475583c1de5",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    }
+  ]
+}
