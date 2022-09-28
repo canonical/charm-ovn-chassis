@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4a3d80c9_c7cd067f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13686
+      },
+      "writtenOn": "2022-09-28T15:21:17Z",
+      "side": 1,
+      "message": "https://bugs.launchpad.net/bugs/1991128",
+      "revId": "b506f11c3840fd4a3803b1707541257d6c08418f",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    }
+  ]
+}
