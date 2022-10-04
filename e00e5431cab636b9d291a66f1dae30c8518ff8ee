@@ -16,6 +16,23 @@
       "message": "Need to update the build.lock",
       "revId": "e00e5431cab636b9d291a66f1dae30c8518ff8ee",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f12349e1_aa333e95",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13686
+      },
+      "writtenOn": "2022-10-04T08:56:17Z",
+      "side": 1,
+      "message": "The build.lock is correct for this patch set.",
+      "revId": "e00e5431cab636b9d291a66f1dae30c8518ff8ee",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
