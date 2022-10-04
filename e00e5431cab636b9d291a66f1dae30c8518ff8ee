@@ -33,6 +33,23 @@
       "message": "The build.lock is correct for this patch set.",
       "revId": "e00e5431cab636b9d291a66f1dae30c8518ff8ee",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b6e6531a_2cc712c3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 20870
+      },
+      "writtenOn": "2022-10-04T17:22:36Z",
+      "side": 1,
+      "message": "LGTM",
+      "revId": "e00e5431cab636b9d291a66f1dae30c8518ff8ee",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
