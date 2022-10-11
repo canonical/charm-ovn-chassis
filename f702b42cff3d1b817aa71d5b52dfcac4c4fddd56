@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1f750c30_8c6c3979",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13686
+      },
+      "writtenOn": "2022-10-11T19:47:33Z",
+      "side": 1,
+      "message": "https://github.com/openstack-charmers/zaza/issues/580",
+      "revId": "f702b42cff3d1b817aa71d5b52dfcac4c4fddd56",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    }
+  ]
+}
