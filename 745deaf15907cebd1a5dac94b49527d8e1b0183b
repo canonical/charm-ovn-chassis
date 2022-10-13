@@ -33,6 +33,23 @@
       "message": "charm-recheck ",
       "revId": "745deaf15907cebd1a5dac94b49527d8e1b0183b",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ba8ecd06_40afaeee",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13686
+      },
+      "writtenOn": "2022-10-13T16:26:41Z",
+      "side": 1,
+      "message": "https://bugs.launchpad.net/charm-ovn-chassis/+bug/1992831",
+      "revId": "745deaf15907cebd1a5dac94b49527d8e1b0183b",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
