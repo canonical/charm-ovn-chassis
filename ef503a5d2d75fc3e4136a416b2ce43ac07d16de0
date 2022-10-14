@@ -16,6 +16,23 @@
       "message": "Transient issue:\n2022-10-14 06:52:43.975256 | focal-medium | 2022-10-14 06:52:43 [ERROR] unit-vault-0.log: tracer: ++   queue handler reactive/snap.py:340:change_snapd_refresh\n2022-10-14 06:52:43.975345 | focal-medium | 2022-10-14 06:52:43 [ERROR] unit-vault-0.log: 2022-10-14 06:48:47 INFO unit.vault/0.juju-log server.go:316 Installing vault from store\n2022-10-14 06:52:43.975495 | focal-medium | 2022-10-14 06:52:43 [ERROR] unit-vault-0.log: 2022-10-14 06:49:50 ERROR unit.vault/0.juju-log server.go:316 Installation failed cmd\u003d\"[\u0027snap\u0027, \u0027install\u0027, \u0027--channel\u003d1.8/stable\u0027, \u0027vault\u0027]\" returncode\u003d1 output\u003d\"b\u0027error: cannot perform the following tasks:\\n- Fetch and check assertions for snap \"vault\" (2066) (Get https://api.snapcraft.io/v2/assertions/snap-revision/FGgCiSdThWGPrYnTCp8gAJ4FFcRUkHJ69-B-Nm7uQGX98A9R6-Y2yQKj2VCz2bmh?max-format\u003d0: net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers))\\n\u0027\"\n2022-10-14 06:52:43.975629 | focal-medium | 2022-10-14 06:52:43 [ERROR] unit-vault-0.log: 2022-10-14 06:50:40 ERROR unit.vault/0.juju-log server.go:316 Installation failed cmd\u003d\"[\u0027snap\u0027, \u0027install\u0027, \u0027--channel\u003d1.8/stable\u0027, \u0027vault\u0027]\" returncode\u003d1 output\u003d\"b\u0027error: unable to contact snap store\\n\u0027\"\n2022-10-14 06:52:43.975841 | focal-medium | 2022-10-14 06:52:43 [ERROR] unit-vault-0.log: 2022-10-14 06:51:30 ERROR unit.vault/0.juju-log server.go:316 Installation failed cmd\u003d\"[\u0027snap\u0027, \u0027install\u0027, \u0027--channel\u003d1.8/stable\u0027, \u0027vault\u0027]\" returncode\u003d1 output\u003d\"b\u0027error: unable to contact snap store\\n\u0027\"\n",
       "revId": "ef503a5d2d75fc3e4136a416b2ce43ac07d16de0",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b459ff62_ae063dbf",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13686
+      },
+      "writtenOn": "2022-10-14T08:15:09Z",
+      "side": 1,
+      "message": "charm-recheck",
+      "revId": "ef503a5d2d75fc3e4136a416b2ce43ac07d16de0",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
