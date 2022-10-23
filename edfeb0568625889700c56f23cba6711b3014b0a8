@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "66f5fa56_e47bc1b4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24824
+      },
+      "writtenOn": "2022-10-23T12:26:34Z",
+      "side": 1,
+      "message": "2022-10-21 22:14:10.776145 | focal-medium | ERROR error attempting to remove ports associated with instance \"ebad9ddf-ad27-49f2-9387-e14ae88d4012\": failed to list os interfaces\n2022-10-21 22:14:10.776723 | focal-medium | caused by: Resource at http://10.245.161.158:8774/v2.1/servers/ebad9ddf-ad27-49f2-9387-e14ae88d4012/os-interface not found\n",
+      "revId": "edfeb0568625889700c56f23cba6711b3014b0a8",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    }
+  ]
+}
