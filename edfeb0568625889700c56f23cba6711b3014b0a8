@@ -33,6 +33,23 @@
       "message": "recheck",
       "revId": "edfeb0568625889700c56f23cba6711b3014b0a8",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7fbc96de_575db5f3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 2424
+      },
+      "writtenOn": "2022-10-26T15:21:43Z",
+      "side": 1,
+      "message": "charm-recheck\n\novn-central on 22.09/edge has been seeded \n\n2022-10-23 13:17:21.237997 | focal-medium | 2022-10-23 13:17:21 [INFO] ERROR cannot deploy bundle: cannot resolve charm or bundle \"ovn-central\": selecting releases: charm or bundle not found for channel \"22.09/edge\", platform \"amd64\"",
+      "revId": "edfeb0568625889700c56f23cba6711b3014b0a8",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
