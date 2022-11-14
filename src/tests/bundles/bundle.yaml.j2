@@ -1,9 +1,6 @@
-variables:
-  openstack-origin: &openstack-origin distro
-
 local_overlay_enabled: False
 
-series: kinetic
+series: {{ TEST_UBUNTU_CODENAME }}
 
 applications:
 
@@ -11,14 +8,14 @@ applications:
     charm: ch:vault
     num_units: 1
     # The vault raft support is currently only available for jammy
-    series: jammy
+    series: {{ TEST_UBUNTU_CODENAME }}
     channel: latest/edge
 
   ovn-central:
     charm: ch:ovn-central
     num_units: 3
     options:
-      source: *openstack-origin
+      source: {{ TEST_UCA_SOURCE }}
     channel: latest/edge
 
   magpie:
@@ -32,11 +29,11 @@ applications:
     charm: ch:magpie
     num_units: 2
     options:
-      source: *openstack-origin
+      source: {{ TEST_UCA_SOURCE }}
     channel: latest/edge
 
   ovn-chassis:
-    charm: ../../../ovn-chassis_ubuntu-22.04-amd64_ubuntu-22.10-amd64.charm
+    charm: ../../../{{ TEST_CHARM_BUILD_ARTIFACT_NAME }}
 
 relations:
 
