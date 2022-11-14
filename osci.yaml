@@ -1,7 +1,50 @@
+- job:
+    name: my-jammy-yoga
+    parent: func-target-pre-jobs
+    dependencies:
+      - osci-lint
+      - charm-build
+    vars:
+      tox_config_file: src/tox.ini
+      tox_extra_args: -- bundle
+      tox_environment:
+        TEST_UBUNTU_CODENAME: jammy
+        TEST_UCA_SOURCE: distro
+        TEST_CHARM_BUILD_ARTIFACT_NAME: "/home/ubuntu/{{ zuul.project.src_dir }}/{{ charm_build_name }}_ubuntu-22.04-amd64_ubuntu-22.10-amd64.charm"
+- job:
+    name: my-jammy-zed
+    parent: func-target-pre-jobs
+    dependencies:
+      - osci-lint
+      - charm-build
+    vars:
+      tox_config_file: src/tox.ini
+      tox_extra_args: -- bundle
+      tox_environment:
+        TEST_UBUNTU_CODENAME: jammy
+        TEST_UCA_SOURCE: cloud:jammy-zed
+        TEST_CHARM_BUILD_ARTIFACT_NAME: "/home/ubuntu/{{ zuul.project.src_dir }}/{{ charm_build_name }}_ubuntu-22.04-amd64_ubuntu-22.10-amd64.charm"
+- job:
+    name: my-kinetic-zed
+    parent: func-target-pre-jobs
+    dependencies:
+      - osci-lint
+      - charm-build
+    vars: 
+      tox_config_file: src/tox.ini
+      tox_extra_args: -- bundle
+      tox_environment:
+        TEST_UBUNTU_CODENAME: jammy
+        TEST_UCA_SOURCE: distro
+        TEST_CHARM_BUILD_ARTIFACT_NAME: "/home/ubuntu/{{ zuul.project.src_dir }}/{{ charm_build_name }}_ubuntu-22.04-amd64_ubuntu-22.10-amd64.charm"
 - project:
     templates:
       - charm-unit-jobs-py310
-      - charm-zed-functional-jobs
+    check:
+      jobs:
+      - my-jammy-yoga
+      - my-jammy-zed
+      - my-kinetic-zed
     vars:
       needs_charm_build: true
       charm_build_name: ovn-chassis
