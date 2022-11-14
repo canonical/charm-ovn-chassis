@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "62df82de_38fff226",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13686
+      },
+      "writtenOn": "2022-11-14T16:25:50Z",
+      "side": 1,
+      "message": "Alternative suggestion to solve the batch problem regarding bundles. Instead of moving them, let\u0027s template them!",
+      "revId": "3f243bc6217af990effbf0a5441012d5424ebe94",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    }
+  ]
+}
