@@ -2,6 +2,7 @@ local_overlay_enabled: False
 
 variables:
   openstack-origin: &openstack-origin distro
+  ovn-central-channel: &ovn-central-channel 20.03/stable
 
 series: focal
 
@@ -57,7 +58,7 @@ applications:
       - '4'
       - '5'
       - '6'
-    channel: openstack-xena/edge
+    channel: *ovn-central-channel
 
   magpie:
     charm: ch:magpie
