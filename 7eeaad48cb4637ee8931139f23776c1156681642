@@ -16,6 +16,23 @@
       "message": "charm-recheck\n\nThe following was merged today. Let\u0027s see if it helps: https://github.com/openstack-charmers/zosci-config/pull/259",
       "revId": "7eeaad48cb4637ee8931139f23776c1156681642",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3bab52dd_a41e6323",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11805
+      },
+      "writtenOn": "2023-01-24T15:54:31Z",
+      "side": 1,
+      "message": "charm-recheck\n\n\nmagpie/0*         blocked   idle   0        172.16.0.49                        icmp ok, local hostname ok (juju-d5e944-zaza-f40db70563ef-0), fwd dns failed: [\u00271\u0027], iperf leader, mtu: 8942",
+      "revId": "7eeaad48cb4637ee8931139f23776c1156681642",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
