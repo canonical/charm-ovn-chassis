@@ -33,6 +33,23 @@
       "message": "charm-recheck\n\nThe following was merged today. Let\u0027s see if it helps: https://github.com/openstack-charmers/zosci-config/pull/259",
       "revId": "48e33c2ffb4fb214e3c6daef1d2a100d4adae077",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6a075023_ff766465",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11805
+      },
+      "writtenOn": "2023-01-24T15:03:14Z",
+      "side": 1,
+      "message": "jammy-zed is hitting the same timeout error as the previous run.\n\nThe plan for this change is to hold off on fixing any CI failures and therefore hold off on merging until another contributor needs to backport a patch to this stable branch in the future. At that point the team will revisit this change, fix any blockers, and get them merged in order to unblock the contributor\u0027s change.",
+      "revId": "48e33c2ffb4fb214e3c6daef1d2a100d4adae077",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
