@@ -16,6 +16,23 @@
       "message": "charm-recheck\n\nmachines stuck allocating",
       "revId": "6508508b93781f657809109b16462ca3b6e80d53",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8dd46eba_141257a7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11805
+      },
+      "writtenOn": "2023-03-21T19:32:55Z",
+      "side": 1,
+      "message": "charm-recheck",
+      "revId": "6508508b93781f657809109b16462ca3b6e80d53",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
