@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a1f205cf_39c88d7a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11805
+      },
+      "writtenOn": "2023-03-29T20:10:45Z",
+      "side": 1,
+      "message": "charm-recheck\n\nhmm I\u0027m going to recheck this. I ran jammy-yoga successfully yesterday. possibly a dns hiccup:\nmagpie/0*         blocked   idle   0        172.16.0.129                       icmp ok, local hostname ok (juju-b2c01f-zaza-35cd68daff23-0), fwd dns failed: [\u00271\u0027], iperf leader, mtu: 8942",
+      "revId": "364fa7fa45946f084c7924d9ca61fe56944bb6e1",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    }
+  ]
+}
