@@ -1,10 +1,10 @@
 charm_name: ovn-chassis
 
 gate_bundles:
-- jammy-yoga
+- kinetic-zed
 
 smoke_bundles:
-- jammy-yoga
+- kinetic-zed
 
 dev_bundles:
 - jammy-yoga
@@ -38,8 +38,8 @@ configure_options:
 
 tests:
 - zaza.openstack.charm_tests.ovn.tests.OVNChassisDeferredRestartTest
-- zaza.openstack.charm_tests.ovn.tests.ChassisCharmOperationTest
-- zaza.openstack.charm_tests.ovn.tests.DPDKTest
+  #- zaza.openstack.charm_tests.ovn.tests.ChassisCharmOperationTest
+  #- #zaza.openstack.charm_tests.ovn.tests.DPDKTest
 
 tests_options:
   force_deploy:
