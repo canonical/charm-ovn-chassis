@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "36c6791f_ab79900c",
+        "filename": "src/actions/restart_services.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 11805
+      },
+      "writtenOn": "2023-03-29T16:00:36Z",
+      "side": 1,
+      "message": "This looks good. Do we need any additional logic based on what restart-services paramters are passed (deferred-only, services, run-hooks)?",
+      "revId": "0ec846a56a00b2c67f2afd825ca4051ce62839c7",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    }
+  ]
+}
