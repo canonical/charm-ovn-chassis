@@ -16,6 +16,23 @@
       "message": "charm-recheck\n\nhttps://review.opendev.org/c/x/charm-ovn-chassis/+/878921",
       "revId": "1f33f04c47b481c9afe6a918510e8fdcecc7d6e4",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "559d4206_7e78ef22",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11805
+      },
+      "writtenOn": "2023-03-30T14:52:55Z",
+      "side": 1,
+      "message": "charm-recheck",
+      "revId": "1f33f04c47b481c9afe6a918510e8fdcecc7d6e4",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
