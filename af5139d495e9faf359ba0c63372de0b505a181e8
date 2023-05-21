@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0465cd21_f43d4f68",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 2424
+      },
+      "writtenOn": "2023-05-21T22:26:50Z",
+      "side": 1,
+      "message": "This patch shouldn\u0027t be merged before this charmcraft issue gets fixed: https://github.com/canonical/charmcraft/issues/1104",
+      "revId": "af5139d495e9faf359ba0c63372de0b505a181e8",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    }
+  ]
+}
