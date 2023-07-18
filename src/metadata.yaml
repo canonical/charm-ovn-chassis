@@ -10,6 +10,7 @@ series:
 - jammy
 - kinetic
 - lunar
+- mantic
 subordinate: true
 extra-bindings:
   data:
