@@ -67,6 +67,23 @@
       "message": "charm-recheck",
       "revId": "e5c8526fd62b59ab4cc74c2507c55e1f5803a836",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e2c4cf08_a0d70677",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13686
+      },
+      "writtenOn": "2023-07-20T17:47:22Z",
+      "side": 1,
+      "message": "Last failure due to error in backport of test code, let\u0027s check again!",
+      "revId": "e5c8526fd62b59ab4cc74c2507c55e1f5803a836",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
