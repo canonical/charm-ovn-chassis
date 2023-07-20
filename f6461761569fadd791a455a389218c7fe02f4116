@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "158cc8b1_72d468be",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13686
+      },
+      "writtenOn": "2023-07-20T07:46:51Z",
+      "side": 1,
+      "message": "Dependent changes need to merge and build.lock needs to be updated to the final destination before merging this.",
+      "revId": "f6461761569fadd791a455a389218c7fe02f4116",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    }
+  ]
+}
