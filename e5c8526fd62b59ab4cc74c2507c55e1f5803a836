@@ -50,6 +50,23 @@
       "message": "Last failure appears to be because of cherry-pick failure, let\u0027s try again after update to the dependent branch!",
       "revId": "e5c8526fd62b59ab4cc74c2507c55e1f5803a836",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5bc6b0df_1693b127",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13686
+      },
+      "writtenOn": "2023-07-20T16:48:50Z",
+      "side": 1,
+      "message": "charm-recheck",
+      "revId": "e5c8526fd62b59ab4cc74c2507c55e1f5803a836",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
