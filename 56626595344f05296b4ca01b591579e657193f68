@@ -1,0 +1,9 @@
+Verified+1: Canonical CI <uosci-testing-bot@ubuntu.com>
+Workflow+1: Felipe Reyes <felipe.reyes@canonical.com>
+Verified+2: Zuul
+Code-Review+2: Felipe Reyes <felipe.reyes@canonical.com>
+Submitted-by: Zuul
+Submitted-at: Mon, 24 Jul 2023 15:58:13 +0000
+Reviewed-on: https://review.opendev.org/c/x/charm-ovn-chassis/+/888799
+Project: x/charm-ovn-chassis
+Branch: refs/heads/master
