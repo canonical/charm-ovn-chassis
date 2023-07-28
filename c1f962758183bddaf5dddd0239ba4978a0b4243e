@@ -50,6 +50,23 @@
       "message": "charm-recheck",
       "revId": "c1f962758183bddaf5dddd0239ba4978a0b4243e",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ff9bf0be_00934e96",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 2424
+      },
+      "writtenOn": "2023-07-28T19:57:47Z",
+      "side": 1,
+      "message": "LGTM. Although we may need this change in stable/22.09 and stable/23.03 too probably, can you confirm?",
+      "revId": "c1f962758183bddaf5dddd0239ba4978a0b4243e",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
