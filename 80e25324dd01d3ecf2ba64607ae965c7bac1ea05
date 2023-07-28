@@ -33,6 +33,23 @@
       "message": "charm-recheck",
       "revId": "80e25324dd01d3ecf2ba64607ae965c7bac1ea05",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0a42b60c_4e99fee7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13686
+      },
+      "writtenOn": "2023-07-28T16:55:38Z",
+      "side": 1,
+      "message": "Last failures due to incorrect set of cherry-picks in the linked Func-Test-Pr",
+      "revId": "80e25324dd01d3ecf2ba64607ae965c7bac1ea05",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
