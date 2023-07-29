@@ -67,6 +67,24 @@
       "message": "LGTM. Although we may need this change in stable/22.09 and stable/23.03 too probably, can you confirm?",
       "revId": "c1f962758183bddaf5dddd0239ba4978a0b4243e",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e1b6f133_5b63b37f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13686
+      },
+      "writtenOn": "2023-07-29T07:11:32Z",
+      "side": 1,
+      "message": "\u003e LGTM. Although we may need this change in stable/22.09 and stable/23.03 too probably, can you confirm?\n\nstable/22.09 and stable/23.03 already have attrs in their build.lock ref:\nhttps://opendev.org/x/charm-ovn-chassis/src/commit/8f257744cb66e6c6ce19d6e7c91456805d6bbfb4/src/build.lock#L143\nhttps://opendev.org/x/charm-ovn-chassis/src/commit/04d04269e4762edb4ed8a811434cddbd98d0dfa7/src/build.lock#L223",
+      "parentUuid": "ff9bf0be_00934e96",
+      "revId": "c1f962758183bddaf5dddd0239ba4978a0b4243e",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
