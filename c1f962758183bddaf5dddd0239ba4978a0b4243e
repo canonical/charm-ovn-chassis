@@ -85,6 +85,41 @@
       "parentUuid": "ff9bf0be_00934e96",
       "revId": "c1f962758183bddaf5dddd0239ba4978a0b4243e",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ff2ebfcf_00cb5185",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 2424
+      },
+      "writtenOn": "2023-08-01T18:39:55Z",
+      "side": 1,
+      "message": "thanks for confirming.",
+      "parentUuid": "e1b6f133_5b63b37f",
+      "revId": "c1f962758183bddaf5dddd0239ba4978a0b4243e",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f4be94c3_31b4b3ca",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 2424
+      },
+      "writtenOn": "2023-08-01T18:39:55Z",
+      "side": 1,
+      "message": "LGTM. We need one more +2 to merge into stable branches.",
+      "revId": "c1f962758183bddaf5dddd0239ba4978a0b4243e",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
