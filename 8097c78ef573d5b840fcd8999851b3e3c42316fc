@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a3cee247_6730090a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31203
+      },
+      "writtenOn": "2023-08-01T17:26:04Z",
+      "side": 1,
+      "message": "charm-recheck tests timed out",
+      "revId": "8097c78ef573d5b840fcd8999851b3e3c42316fc",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    }
+  ]
+}
