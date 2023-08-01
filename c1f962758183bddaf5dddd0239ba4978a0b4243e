@@ -120,6 +120,23 @@
       "message": "LGTM. We need one more +2 to merge into stable branches.",
       "revId": "c1f962758183bddaf5dddd0239ba4978a0b4243e",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a9eedc88_f99561ed",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11805
+      },
+      "writtenOn": "2023-08-01T19:59:19Z",
+      "side": 1,
+      "message": "LGTM",
+      "revId": "c1f962758183bddaf5dddd0239ba4978a0b4243e",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
