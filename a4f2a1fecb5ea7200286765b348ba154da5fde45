@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "626dfd71_cf414c8a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32288
+      },
+      "writtenOn": "2023-08-25T07:57:55Z",
+      "side": 1,
+      "message": "LGTM. Underlying change was reviewed here: https://github.com/openstack-charmers/charm-layer-ovn/pull/84",
+      "revId": "a4f2a1fecb5ea7200286765b348ba154da5fde45",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    }
+  ]
+}
