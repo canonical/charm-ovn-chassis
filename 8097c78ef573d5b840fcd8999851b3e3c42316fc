@@ -16,6 +16,23 @@
       "message": "charm-recheck tests timed out",
       "revId": "8097c78ef573d5b840fcd8999851b3e3c42316fc",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "88587744_9f8d3bfb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 30561
+      },
+      "writtenOn": "2023-09-15T15:46:24Z",
+      "side": 1,
+      "message": "charm-recheck",
+      "revId": "8097c78ef573d5b840fcd8999851b3e3c42316fc",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
