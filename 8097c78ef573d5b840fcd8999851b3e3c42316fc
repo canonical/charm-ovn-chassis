@@ -67,6 +67,23 @@
       "message": "LGTM. The change matches what has already landed on master. Just need tests to pass.",
       "revId": "8097c78ef573d5b840fcd8999851b3e3c42316fc",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6e9c6aa0_38f25d8f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11805
+      },
+      "writtenOn": "2023-09-19T17:19:32Z",
+      "side": 1,
+      "message": "charm-recheck",
+      "revId": "8097c78ef573d5b840fcd8999851b3e3c42316fc",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
