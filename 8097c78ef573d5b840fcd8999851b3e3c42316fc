@@ -50,6 +50,23 @@
       "message": "charm-recheck\n\n2023-09-15 16:35:28.249008 | focal-medium | novaclient.exceptions.ClientException: Unexpected API Error. Please report this at http://bugs.launchpad.net/nova/ and attach the Nova API log if possible.\n2023-09-15 16:35:28.249025 | focal-medium | \u003cclass \u0027oslo_messaging.exceptions.MessagingTimeout\u0027\u003e (HTTP 500) (Request-ID: req-378a8f92-cfa3-4fcb-bb59-01eee68a7b2f)",
       "revId": "8097c78ef573d5b840fcd8999851b3e3c42316fc",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "467fb5f9_94414e3e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11805
+      },
+      "writtenOn": "2023-09-19T15:41:48Z",
+      "side": 1,
+      "message": "LGTM. The change matches what has already landed on master. Just need tests to pass.",
+      "revId": "8097c78ef573d5b840fcd8999851b3e3c42316fc",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
