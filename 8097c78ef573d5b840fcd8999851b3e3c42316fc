@@ -1,0 +1,11 @@
+Code-Review+2: Alex Kavanagh <alex.kavanagh@canonical.com>
+Verified+2: Zuul
+Code-Review+1: Jadon Naas <jadon.naas@canonical.com>
+Verified+1: Canonical CI <uosci-testing-bot@ubuntu.com>
+Workflow+1: Alex Kavanagh <alex.kavanagh@canonical.com>
+Code-Review+2: Corey Bryant <corey.bryant@canonical.com>
+Submitted-by: Zuul
+Submitted-at: Thu, 21 Sep 2023 17:42:46 +0000
+Reviewed-on: https://review.opendev.org/c/x/charm-ovn-chassis/+/889344
+Project: x/charm-ovn-chassis
+Branch: refs/heads/stable/22.03
