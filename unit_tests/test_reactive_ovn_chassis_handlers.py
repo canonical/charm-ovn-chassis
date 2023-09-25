@@ -12,9 +12,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+import mock
+import os
+import tempfile
+
 import reactive.ovn_chassis_handlers as handlers
 
 import charms_openstack.test_utils as test_utils
+import charm.openstack.ovn_chassis as ovn_chassis
 
 
 class TestRegisteredHooks(test_utils.TestRegisteredHooks):
@@ -40,3 +45,22 @@ class TestOvnHandlers(test_utils.PatchHelper):
         self.patch_object(handlers.reactive, 'set_flag')
         handlers.enable_ovn_chassis_handlers()
         self.set_flag.assert_called_once_with('MOCKED_FLAG')
+
+    def test_render_nrpe(self):
+        with tempfile.TemporaryDirectory() as dtmp:
+            os.environ['CHARM_DIR'] = dtmp
+            self.patch_object(ovn_chassis.nrpe, 'NRPE')
+            self.patch_object(ovn_chassis.nrpe, 'add_init_service_checks')
+            self.target.render_nrpe()
+            # Note that this list is valid for Ussuri
+            self.add_init_service_checks.assert_has_calls([
+                mock.call().add_init_service_checks(
+                    mock.ANY,
+                    ['ovn-northd', 'ovn-ovsdb-server-nb',
+                     'ovn-ovsdb-server-sb'],
+                    mock.ANY
+                ),
+            ])
+            self.NRPE.assert_has_calls([
+                mock.call().write(),
+            ])
