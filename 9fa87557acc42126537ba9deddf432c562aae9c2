@@ -35,6 +35,24 @@
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     },
     {
+      "unresolved": true,
+      "key": {
+        "uuid": "3a197448_942bfc5e",
+        "filename": "src/files/nagios/nrpe_check_ovn_certs.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 6737
+      },
+      "writtenOn": "2023-09-28T14:45:09Z",
+      "side": 1,
+      "message": "yeah the lock point is a good one although if the file is no good it just raises a ValueError and we move on until next check",
+      "parentUuid": "7aeed6a5_88865c5e",
+      "revId": "9fa87557acc42126537ba9deddf432c562aae9c2",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
       "unresolved": false,
       "key": {
         "uuid": "535078cc_9fb79b66",
@@ -88,6 +106,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "a7ace9dd_a2ef0df4",
+        "filename": "src/files/scripts/check_ovn_certs.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 6737
+      },
+      "writtenOn": "2023-09-28T14:45:09Z",
+      "side": 1,
+      "message": "yes, it gets installed by the charm (in this patchset)",
+      "parentUuid": "b24c9abb_86390a3e",
+      "revId": "9fa87557acc42126537ba9deddf432c562aae9c2",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "48a9aff8_0cfd936c",
         "filename": "src/files/scripts/check_ovn_certs.py",
         "patchSetId": 3
@@ -99,6 +135,24 @@
       "writtenOn": "2023-09-26T14:30:17Z",
       "side": 1,
       "message": "let\u0027s make those exit code values (2, 1, 0) into constants CRITICAL, WARN and SUCCESS",
+      "revId": "9fa87557acc42126537ba9deddf432c562aae9c2",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bc3e00a3_a449cf79",
+        "filename": "src/files/scripts/check_ovn_certs.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 6737
+      },
+      "writtenOn": "2023-09-28T14:45:09Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "48a9aff8_0cfd936c",
       "revId": "9fa87557acc42126537ba9deddf432c562aae9c2",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     },
@@ -120,6 +174,24 @@
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "6136911a_bf946630",
+        "filename": "src/files/scripts/check_ovn_certs.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 6737
+      },
+      "writtenOn": "2023-09-28T14:45:09Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "cf3e2384_c55f2e35",
+      "revId": "9fa87557acc42126537ba9deddf432c562aae9c2",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "dd5bad5a_282bae4c",
@@ -137,6 +209,24 @@
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "d512842b_c15097ea",
+        "filename": "src/files/scripts/check_ovn_certs.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 82,
+      "author": {
+        "id": 6737
+      },
+      "writtenOn": "2023-09-28T14:45:09Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "dd5bad5a_282bae4c",
+      "revId": "9fa87557acc42126537ba9deddf432c562aae9c2",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "96353b98_58ac4c2f",
@@ -150,6 +240,24 @@
       "writtenOn": "2023-09-26T14:30:17Z",
       "side": 1,
       "message": "this would be better served by https://docs.python.org/3/library/datetime.html#datetime.datetime.strftime , you can then use https://docs.python.org/3/library/datetime.html#datetime.datetime.strptime in the other script, extra points if you use isoformat() - https://docs.python.org/3/library/datetime.html#datetime.datetime.fromisoformat",
+      "revId": "9fa87557acc42126537ba9deddf432c562aae9c2",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5bb46b9d_46b4b52e",
+        "filename": "src/files/scripts/check_ovn_certs.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 6737
+      },
+      "writtenOn": "2023-09-28T14:45:09Z",
+      "side": 1,
+      "message": "sure, it is basically doing this same thing though. i guess its good to use a recognised method so will adapt.",
+      "parentUuid": "96353b98_58ac4c2f",
       "revId": "9fa87557acc42126537ba9deddf432c562aae9c2",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     },
@@ -190,6 +298,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "662928b8_22e4a869",
+        "filename": "src/lib/charm/openstack/ovn_chassis.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 6737
+      },
+      "writtenOn": "2023-09-28T14:45:09Z",
+      "side": 1,
+      "message": "i think i can leverage BaseOVNChassisCharm for this",
+      "parentUuid": "9b1bb2da_5053df69",
+      "revId": "9fa87557acc42126537ba9deddf432c562aae9c2",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "9264ed02_3199e5f3",
         "filename": "src/lib/charm/openstack/ovn_chassis.py",
         "patchSetId": 3
@@ -201,6 +327,24 @@
       "writtenOn": "2023-09-26T14:30:17Z",
       "side": 1,
       "message": "I don\u0027t think there is a need of reading certificates to aggressively considering this data piece doesn\u0027t change often enough, maybe running this hourly would be enough.",
+      "revId": "9fa87557acc42126537ba9deddf432c562aae9c2",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "35f5618e_11146f1a",
+        "filename": "src/lib/charm/openstack/ovn_chassis.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 6737
+      },
+      "writtenOn": "2023-09-28T14:45:09Z",
+      "side": 1,
+      "message": "agreed",
+      "parentUuid": "9264ed02_3199e5f3",
       "revId": "9fa87557acc42126537ba9deddf432c562aae9c2",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
