@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "10d7ed41_d060f8df",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 6737
+      },
+      "writtenOn": "2023-09-28T15:59:13Z",
+      "side": 1,
+      "message": "if/once this lands ill make the same tweaks to ovn-central",
+      "revId": "6a09fa09d518d233eea1ff6f562ed8548109c130",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    }
+  ]
+}
