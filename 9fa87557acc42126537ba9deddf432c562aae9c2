@@ -281,6 +281,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "9a641140_7a25d55b",
+        "filename": "src/lib/charm/openstack/ovn_chassis.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 6737
+      },
+      "writtenOn": "2023-09-28T16:00:31Z",
+      "side": 1,
+      "message": "i\u0027ve switch to using the super class as much as possible here so as not to override",
+      "parentUuid": "b509b2e6_658fa0a5",
+      "revId": "9fa87557acc42126537ba9deddf432c562aae9c2",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "9b1bb2da_5053df69",
         "filename": "src/lib/charm/openstack/ovn_chassis.py",
         "patchSetId": 3
@@ -310,6 +328,24 @@
       "side": 1,
       "message": "i think i can leverage BaseOVNChassisCharm for this",
       "parentUuid": "9b1bb2da_5053df69",
+      "revId": "9fa87557acc42126537ba9deddf432c562aae9c2",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ff319cd2_7b4b145c",
+        "filename": "src/lib/charm/openstack/ovn_chassis.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 6737
+      },
+      "writtenOn": "2023-09-28T16:00:31Z",
+      "side": 1,
+      "message": "against switch to use super().packages",
+      "parentUuid": "662928b8_22e4a869",
       "revId": "9fa87557acc42126537ba9deddf432c562aae9c2",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     },
