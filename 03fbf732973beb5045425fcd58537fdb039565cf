@@ -16,6 +16,23 @@
       "message": "waiting for the CI results.",
       "revId": "03fbf732973beb5045425fcd58537fdb039565cf",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b0d67029_6f59affb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11805
+      },
+      "writtenOn": "2023-09-28T16:15:02Z",
+      "side": 1,
+      "message": "charm-recheck\n\njammy-bobcat failure\n\nmagpie/1*         blocked   idle   1        172.16.0.75                        icmp ok, local hostname ok (juju-9f6adc-zaza-db732229c634-1), fwd dns failed: [\u00270\u0027], iperf leader, mtu: 8942",
+      "revId": "03fbf732973beb5045425fcd58537fdb039565cf",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
