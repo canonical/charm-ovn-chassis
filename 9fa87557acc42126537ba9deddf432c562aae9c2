@@ -122,6 +122,24 @@
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "3fbdc9c6_78e3d654",
+        "filename": "src/files/scripts/check_ovn_certs.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 2424
+      },
+      "writtenOn": "2023-10-02T18:16:15Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "a7ace9dd_a2ef0df4",
+      "revId": "9fa87557acc42126537ba9deddf432c562aae9c2",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "48a9aff8_0cfd936c",
@@ -258,6 +276,24 @@
       "side": 1,
       "message": "sure, it is basically doing this same thing though. i guess its good to use a recognised method so will adapt.",
       "parentUuid": "96353b98_58ac4c2f",
+      "revId": "9fa87557acc42126537ba9deddf432c562aae9c2",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "22c72348_b2fb91e5",
+        "filename": "src/files/scripts/check_ovn_certs.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 2424
+      },
+      "writtenOn": "2023-10-02T18:16:15Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5bb46b9d_46b4b52e",
       "revId": "9fa87557acc42126537ba9deddf432c562aae9c2",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     },

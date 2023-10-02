@@ -33,6 +33,80 @@
       "message": "charm-recheck",
       "revId": "6a09fa09d518d233eea1ff6f562ed8548109c130",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5a1de140_d4cd41cd",
+        "filename": "pylintrc",
+        "patchSetId": 4
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 2424
+      },
+      "writtenOn": "2023-10-02T18:16:15Z",
+      "side": 1,
+      "message": "we rely on flake8, there is no need to add this pylint config file.",
+      "revId": "6a09fa09d518d233eea1ff6f562ed8548109c130",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f604ea54_1aded6ba",
+        "filename": "src/files/nagios/nrpe_check_ovn_certs.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 2424
+      },
+      "writtenOn": "2023-10-02T18:16:15Z",
+      "side": 1,
+      "message": "I believe this case should be treated as a warning",
+      "revId": "6a09fa09d518d233eea1ff6f562ed8548109c130",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "57db7c5d_b1f17f56",
+        "filename": "src/metadata.yaml",
+        "patchSetId": 4
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 2424
+      },
+      "writtenOn": "2023-10-02T18:16:15Z",
+      "side": 1,
+      "message": "this is a reactive charm, I think you would need to add src/layer.yaml the nrpe-external-master layer",
+      "revId": "6a09fa09d518d233eea1ff6f562ed8548109c130",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3a46b0c8_2989a8f3",
+        "filename": "tox.ini",
+        "patchSetId": 4
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 2424
+      },
+      "writtenOn": "2023-10-02T18:16:15Z",
+      "side": 1,
+      "message": "we don\u0027t use pylint, if you are interested in that the project adopts this it should be treated as a separate patch from the feature this gerrit review aims to implement.",
+      "range": {
+        "startLine": 8,
+        "startChar": 15,
+        "endLine": 8,
+        "endChar": 21
+      },
+      "revId": "6a09fa09d518d233eea1ff6f562ed8548109c130",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
