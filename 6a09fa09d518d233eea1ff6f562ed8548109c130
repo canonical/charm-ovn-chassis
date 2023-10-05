@@ -71,6 +71,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "f807a2a8_35463f77",
+        "filename": "src/files/nagios/nrpe_check_ovn_certs.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 6737
+      },
+      "writtenOn": "2023-10-05T15:38:39Z",
+      "side": 1,
+      "message": "ack will fix",
+      "parentUuid": "f604ea54_1aded6ba",
+      "revId": "6a09fa09d518d233eea1ff6f562ed8548109c130",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "57db7c5d_b1f17f56",
         "filename": "src/metadata.yaml",
         "patchSetId": 4
@@ -88,6 +106,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "4c8c13cf_7cb17b15",
+        "filename": "src/metadata.yaml",
+        "patchSetId": 4
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 6737
+      },
+      "writtenOn": "2023-10-05T15:38:39Z",
+      "side": 1,
+      "message": "ack will fix",
+      "parentUuid": "57db7c5d_b1f17f56",
+      "revId": "6a09fa09d518d233eea1ff6f562ed8548109c130",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "3a46b0c8_2989a8f3",
         "filename": "tox.ini",
         "patchSetId": 4
@@ -99,6 +135,30 @@
       "writtenOn": "2023-10-02T18:16:15Z",
       "side": 1,
       "message": "we don\u0027t use pylint, if you are interested in that the project adopts this it should be treated as a separate patch from the feature this gerrit review aims to implement.",
+      "range": {
+        "startLine": 8,
+        "startChar": 15,
+        "endLine": 8,
+        "endChar": 21
+      },
+      "revId": "6a09fa09d518d233eea1ff6f562ed8548109c130",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9f7fa577_c9dc50b4",
+        "filename": "tox.ini",
+        "patchSetId": 4
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 6737
+      },
+      "writtenOn": "2023-10-05T15:38:39Z",
+      "side": 1,
+      "message": "Sure but if we dont add this there is no way to test the python scripts added by this patch. i added this to ovn-central also for the same reason. You think there is another way? Just rely on flake8?",
+      "parentUuid": "3a46b0c8_2989a8f3",
       "range": {
         "startLine": 8,
         "startChar": 15,
