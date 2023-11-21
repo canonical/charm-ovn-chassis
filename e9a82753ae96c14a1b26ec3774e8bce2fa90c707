@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d31a579c_33cc9432",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32288
+      },
+      "writtenOn": "2023-11-21T10:38:18Z",
+      "side": 1,
+      "message": "I left few minor inline comments. However, I keep thinking about whether we have some better mechanism of delivering this synchronously to both `ovn-chassis` and `ovn-central` charms. Right now, any modifications would required similar PR for the other repository (not to mention backports :harold-headache:). Perhaps a pypi package or git submodule (although that would certainly bring its own set of issues around reproducible builds)... just thinking out loud here.\n\n(I also noticed that one of Felipe\u0027s comments about cronjob\u0027s interval was not addressed yet)",
+      "revId": "e9a82753ae96c14a1b26ec3774e8bce2fa90c707",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "87422ac3_e748e819",
+        "filename": "pylintrc",
+        "patchSetId": 5
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 32288
+      },
+      "writtenOn": "2023-11-21T10:38:18Z",
+      "side": 1,
+      "message": "I\u0027m fan of pylint and I think it\u0027s fine to include it for the \"external\" python script linting. However with the list of disabled checks it almost defeats the purpose. I\u0027d suggest at least reducing them just to those that are relevant for the added nrpe scripts.\n```\n[MESSAGES CONTROL]\ndisable\u003d\n  consider-using-f-string,\n  missing-module-docstring,\n  missing-function-docstring,\n  missing-class-docstring,\n  useless-object-inheritance,\n  invalid-name,\n  unspecified-encoding,\n  broad-except,\n```\n\nAnd out of these, I think that following could be easily fixed:\n- f-strings (unless this needs to be backported to something with python below 3.6)\n- useless-object-inheritance\n- invalid-name (The two-letter variables are offender here)\n- unspecified-encoding",
+      "revId": "e9a82753ae96c14a1b26ec3774e8bce2fa90c707",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "43f0b1ee_7dd83306",
+        "filename": "src/files/scripts/check_ovn_certs.py",
+        "patchSetId": 5
+      },
+      "lineNbr": 73,
+      "author": {
+        "id": 32288
+      },
+      "writtenOn": "2023-11-21T10:38:18Z",
+      "side": 1,
+      "message": "This check is for `\u003c60` days, but the message says `\u003c10`.",
+      "revId": "e9a82753ae96c14a1b26ec3774e8bce2fa90c707",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    }
+  ]
+}
