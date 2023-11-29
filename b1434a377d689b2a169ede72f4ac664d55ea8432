@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "df17373f_8bff4aa2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 2424
+      },
+      "writtenOn": "2023-11-29T14:44:07Z",
+      "side": 1,
+      "message": "charm-recheck\n\n```\n\n2023-11-28 22:41:21.715393 | focal-medium | 2023-11-28 22:41:21 [INFO] TIMEOUT: Workloads didn\u0027t reach acceptable status:\n2023-11-28 22:41:21.715621 | focal-medium | 2023-11-28 22:41:21 [INFO] Timed out waiting for \u0027magpie/0\u0027. The workload status is \u0027blocked\u0027 which is not one of \u0027[\u0027active\u0027]\u0027\n2023-11-28 22:41:21.715644 | focal-medium | 2023-11-28 22:41:21 [ERROR] {\u0027default_alias\u0027: \u0027zaza-b1db9148b205\u0027}\n```",
+      "revId": "b1434a377d689b2a169ede72f4ac664d55ea8432",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    }
+  ]
+}
