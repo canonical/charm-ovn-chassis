@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7f8f19fa_3cc7804c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11805
+      },
+      "writtenOn": "2023-11-29T17:39:55Z",
+      "side": 1,
+      "message": "Landing for release",
+      "revId": "e9d3f70b949f57d7353e3d386a27f39c92e14fb3",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    }
+  ]
+}
