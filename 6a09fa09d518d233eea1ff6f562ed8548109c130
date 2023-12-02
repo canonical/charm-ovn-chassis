@@ -203,6 +203,30 @@
       },
       "revId": "6a09fa09d518d233eea1ff6f562ed8548109c130",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c81d42f6_dfefca2a",
+        "filename": "tox.ini",
+        "patchSetId": 4
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 6737
+      },
+      "writtenOn": "2023-12-02T16:08:02Z",
+      "side": 1,
+      "message": "have removed pylint and using flake8 to test these now.",
+      "parentUuid": "9f7fa577_c9dc50b4",
+      "range": {
+        "startLine": 8,
+        "startChar": 15,
+        "endLine": 8,
+        "endChar": 21
+      },
+      "revId": "6a09fa09d518d233eea1ff6f562ed8548109c130",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
