@@ -50,6 +50,24 @@
       "message": "This check is for `\u003c60` days, but the message says `\u003c10`.",
       "revId": "e9a82753ae96c14a1b26ec3774e8bce2fa90c707",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "00918489_0f60199a",
+        "filename": "src/files/scripts/check_ovn_certs.py",
+        "patchSetId": 5
+      },
+      "lineNbr": 73,
+      "author": {
+        "id": 6737
+      },
+      "writtenOn": "2023-12-02T16:04:03Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "43f0b1ee_7dd83306",
+      "revId": "e9a82753ae96c14a1b26ec3774e8bce2fa90c707",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }

@@ -87,6 +87,24 @@
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "f761e9b2_61def504",
+        "filename": "src/files/nagios/nrpe_check_ovn_certs.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 6737
+      },
+      "writtenOn": "2023-12-02T16:04:03Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "56e04d7d_fa02a934",
+      "revId": "9fa87557acc42126537ba9deddf432c562aae9c2",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "b24c9abb_86390a3e",
@@ -333,6 +351,24 @@
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "221d4c34_44fbe279",
+        "filename": "src/lib/charm/openstack/ovn_chassis.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 6737
+      },
+      "writtenOn": "2023-12-02T16:04:03Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9a641140_7a25d55b",
+      "revId": "9fa87557acc42126537ba9deddf432c562aae9c2",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "9b1bb2da_5053df69",
@@ -386,6 +422,24 @@
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "9a0fbc5c_0f2cae5d",
+        "filename": "src/lib/charm/openstack/ovn_chassis.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 6737
+      },
+      "writtenOn": "2023-12-02T16:04:03Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ff319cd2_7b4b145c",
+      "revId": "9fa87557acc42126537ba9deddf432c562aae9c2",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "9264ed02_3199e5f3",
@@ -417,6 +471,24 @@
       "side": 1,
       "message": "agreed",
       "parentUuid": "9264ed02_3199e5f3",
+      "revId": "9fa87557acc42126537ba9deddf432c562aae9c2",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0a13bceb_eddcbfce",
+        "filename": "src/lib/charm/openstack/ovn_chassis.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 6737
+      },
+      "writtenOn": "2023-12-02T16:04:03Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "35f5618e_11146f1a",
       "revId": "9fa87557acc42126537ba9deddf432c562aae9c2",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }

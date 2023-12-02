@@ -87,6 +87,24 @@
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "7792e577_c53202e5",
+        "filename": "src/files/nagios/nrpe_check_ovn_certs.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 6737
+      },
+      "writtenOn": "2023-12-02T16:04:03Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f807a2a8_35463f77",
+      "revId": "6a09fa09d518d233eea1ff6f562ed8548109c130",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "57db7c5d_b1f17f56",
@@ -118,6 +136,24 @@
       "side": 1,
       "message": "ack will fix",
       "parentUuid": "57db7c5d_b1f17f56",
+      "revId": "6a09fa09d518d233eea1ff6f562ed8548109c130",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "16dd8463_7b5d86d5",
+        "filename": "src/metadata.yaml",
+        "patchSetId": 4
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 6737
+      },
+      "writtenOn": "2023-12-02T16:04:03Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "4c8c13cf_7cb17b15",
       "revId": "6a09fa09d518d233eea1ff6f562ed8548109c130",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     },
