@@ -43,10 +43,10 @@
     {
       "type": "layer",
       "item": "layer:ovn",
-      "url": "https://github.com/openstack-charmers/charm-layer-ovn.git",
+      "url": "https://github.com/fnordahl/charm-layer-ovn.git",
       "vcs": null,
-      "branch": "4562fbb1320ec18e32a4b99e390b70c1c597cffa",
-      "commit": "4562fbb1320ec18e32a4b99e390b70c1c597cffa"
+      "branch": "refs/heads/branch-22.03-add-version-pinnning-option",
+      "commit": "7396b8b1c8f38c5e73be036acee29851a3df1ca4"
     },
     {
       "type": "layer",
