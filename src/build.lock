@@ -27,10 +27,10 @@
     {
       "type": "layer",
       "item": "layer:ovn",
-      "url": "https://github.com/openstack-charmers/charm-layer-ovn.git",
+      "url": "https://github.com/fnordahl/charm-layer-ovn.git",
       "vcs": null,
-      "branch": "refs/heads/stable/22.03",
-      "commit": "85eea6a2283c5727fa951670ad48d6d81c8b2675"
+      "branch": "refs/heads"branch-22.03-add-version-pinnning-option",
+      "commit": "7396b8b1c8f38c5e73be036acee29851a3df1ca4"
     },
     {
       "type": "layer",
@@ -112,7 +112,13 @@
       "type": "python_module",
       "package": "PyYAML",
       "vcs": null,
-      "version": "5.3.1"
+      "version": "6.0.1"
+    },
+    {
+      "type": "python_module",
+      "package": "Cython",
+      "vcs": null,
+      "version": "0.29.36"
     },
     {
       "type": "python_module",
