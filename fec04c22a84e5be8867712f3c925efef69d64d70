@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b8b1a8a5_7a935653",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32288
+      },
+      "writtenOn": "2023-12-06T10:48:36Z",
+      "side": 1,
+      "message": "LGTM, lets just hear from Felipe as well regarding his comments.",
+      "revId": "fec04c22a84e5be8867712f3c925efef69d64d70",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    }
+  ]
+}
