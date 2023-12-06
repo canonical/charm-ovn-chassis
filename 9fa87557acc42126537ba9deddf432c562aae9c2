@@ -55,6 +55,24 @@
     {
       "unresolved": false,
       "key": {
+        "uuid": "847a0d3e_9309251e",
+        "filename": "src/files/nagios/nrpe_check_ovn_certs.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 2424
+      },
+      "writtenOn": "2023-12-06T21:08:33Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "3a197448_942bfc5e",
+      "revId": "9fa87557acc42126537ba9deddf432c562aae9c2",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
         "uuid": "535078cc_9fb79b66",
         "filename": "src/files/nagios/nrpe_check_ovn_certs.py",
         "patchSetId": 3
