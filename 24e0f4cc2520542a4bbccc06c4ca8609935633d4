@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7468f077_e84d9646",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13686
+      },
+      "writtenOn": "2023-12-07T11:27:40Z",
+      "side": 1,
+      "message": "Note that the Canonical CI will fail on this change because both this and the next change in the series are required to unblock the gate.\n\nSo please review this change on the basis of CI verdict of decedent changes in this series.",
+      "revId": "24e0f4cc2520542a4bbccc06c4ca8609935633d4",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    }
+  ]
+}
