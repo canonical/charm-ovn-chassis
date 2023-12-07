@@ -16,6 +16,23 @@
       "message": "Note that the Canonical CI will fail on this change because both this and the next change in the series are required to unblock the gate.\n\nSo please review this change on the basis of CI verdict of decedent changes in this series.",
       "revId": "24e0f4cc2520542a4bbccc06c4ca8609935633d4",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3c68bc26_8f4e29dd",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32288
+      },
+      "writtenOn": "2023-12-07T12:12:36Z",
+      "side": 1,
+      "message": "LGTM, considering that the next patch in chain will fix the pending CI issue",
+      "revId": "24e0f4cc2520542a4bbccc06c4ca8609935633d4",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
