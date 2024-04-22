@@ -1,0 +1,10 @@
+Verified+1: Canonical CI <uosci-testing-bot@ubuntu.com>
+Code-Review+2: Martin Kalcok <martin.kalcok@canonical.com>
+Verified+2: Zuul
+Workflow+1: Martin Kalcok <martin.kalcok@canonical.com>
+Submitted-by: Zuul
+Submitted-at: Mon, 22 Apr 2024 06:47:12 +0000
+Reviewed-on: https://review.opendev.org/c/x/charm-ovn-chassis/+/915472
+Comments-Total: 1
+Project: x/charm-ovn-chassis
+Branch: refs/heads/master
