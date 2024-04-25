@@ -1,0 +1,10 @@
+Verified+2: Zuul
+Code-Review+2: Nicolas Bock <nicolas.bock@canonical.com>
+Code-Review+2: Edward Hope-Morley <edward.hope-morley@canonical.com>
+Verified+1: Canonical CI <uosci-testing-bot@ubuntu.com>
+Workflow+1: Edward Hope-Morley <edward.hope-morley@canonical.com>
+Submitted-by: Zuul
+Submitted-at: Thu, 25 Apr 2024 13:59:36 +0000
+Reviewed-on: https://review.opendev.org/c/x/charm-ovn-chassis/+/917028
+Project: x/charm-ovn-chassis
+Branch: refs/heads/stable/23.09
