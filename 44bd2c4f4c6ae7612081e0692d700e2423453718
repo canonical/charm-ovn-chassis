@@ -16,6 +16,23 @@
       "message": "LGTM, thanks!",
       "revId": "44bd2c4f4c6ae7612081e0692d700e2423453718",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9fabd2c9_91f5e36b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 2424
+      },
+      "writtenOn": "2024-05-02T16:36:49Z",
+      "side": 1,
+      "message": "LGTM. 23.04 is EOL and no longer needed in master.",
+      "revId": "44bd2c4f4c6ae7612081e0692d700e2423453718",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
