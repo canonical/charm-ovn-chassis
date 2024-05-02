@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "bf14bc51_50b9ff6a",
+        "filename": "src/files/scripts/check_ovn_certs.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 14567
+      },
+      "writtenOn": "2024-05-02T11:24:07Z",
+      "side": 1,
+      "message": "this is a very good change, but why can\u0027t we print the exact remaining days given we have the number instead of 30? I am just thinking of the user experience. Currrently, if there are let\u0027s say 3 days left, but the message still says \"less than 30 days\", which I don\u0027t is a very good experience for the customers to track how many days they really have.",
+      "range": {
+        "startLine": 76,
+        "startChar": 17,
+        "endLine": 84,
+        "endChar": 52
+      },
+      "revId": "cc6d9c6aec59e3d9616d80c4113fede20aea44ad",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "adba0c28_f68cdb09",
+        "filename": "src/files/scripts/check_ovn_certs.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 98,
+      "author": {
+        "id": 14567
+      },
+      "writtenOn": "2024-05-02T11:24:07Z",
+      "side": 1,
+      "message": "where is the new exit_code 3 parsed?",
+      "range": {
+        "startLine": 98,
+        "startChar": 31,
+        "endLine": 98,
+        "endChar": 52
+      },
+      "revId": "cc6d9c6aec59e3d9616d80c4113fede20aea44ad",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    }
+  ]
+}
