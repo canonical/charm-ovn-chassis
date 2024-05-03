@@ -24,6 +24,30 @@
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "96d31c16_b7f72647",
+        "filename": "src/files/scripts/check_ovn_certs.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 5112
+      },
+      "writtenOn": "2024-05-03T05:05:57Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "bf14bc51_50b9ff6a",
+      "range": {
+        "startLine": 76,
+        "startChar": 17,
+        "endLine": 84,
+        "endChar": 52
+      },
+      "revId": "cc6d9c6aec59e3d9616d80c4113fede20aea44ad",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "adba0c28_f68cdb09",
@@ -37,6 +61,30 @@
       "writtenOn": "2024-05-02T11:24:07Z",
       "side": 1,
       "message": "where is the new exit_code 3 parsed?",
+      "range": {
+        "startLine": 98,
+        "startChar": 31,
+        "endLine": 98,
+        "endChar": 52
+      },
+      "revId": "cc6d9c6aec59e3d9616d80c4113fede20aea44ad",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a533b08a_52c57046",
+        "filename": "src/files/scripts/check_ovn_certs.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 98,
+      "author": {
+        "id": 5112
+      },
+      "writtenOn": "2024-05-03T05:05:57Z",
+      "side": 1,
+      "message": "it is handling by nagios https://assets.nagios.com/downloads/nagioscore/docs/nagioscore/3/en/pluginapi.html",
+      "parentUuid": "adba0c28_f68cdb09",
       "range": {
         "startLine": 98,
         "startChar": 31,
