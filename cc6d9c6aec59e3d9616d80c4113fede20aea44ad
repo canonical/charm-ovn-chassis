@@ -48,6 +48,30 @@
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "054fbec9_a67030c5",
+        "filename": "src/files/scripts/check_ovn_certs.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 5112
+      },
+      "writtenOn": "2024-05-03T05:13:28Z",
+      "side": 1,
+      "message": "Thanks!",
+      "parentUuid": "96d31c16_b7f72647",
+      "range": {
+        "startLine": 76,
+        "startChar": 17,
+        "endLine": 84,
+        "endChar": 52
+      },
+      "revId": "cc6d9c6aec59e3d9616d80c4113fede20aea44ad",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "adba0c28_f68cdb09",
