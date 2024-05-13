@@ -1,0 +1,11 @@
+Workflow+1: Edward Hope-Morley <edward.hope-morley@canonical.com>
+Code-Review+1: Rodrigo Barbieri <rodrigo.barbieri@canonical.com>
+Verified+1: Canonical CI <uosci-testing-bot@ubuntu.com>
+Verified+2: Zuul
+Code-Review+2: Edward Hope-Morley <edward.hope-morley@canonical.com>
+Submitted-by: Zuul
+Submitted-at: Mon, 13 May 2024 14:34:30 +0000
+Reviewed-on: https://review.opendev.org/c/x/charm-ovn-chassis/+/917512
+Comments-Total: 2
+Project: x/charm-ovn-chassis
+Branch: refs/heads/master
