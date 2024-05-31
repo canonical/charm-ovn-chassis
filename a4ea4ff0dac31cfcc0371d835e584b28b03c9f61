@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6c6fa82c_7d8e0d39",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 6737
+      },
+      "writtenOn": "2024-05-31T10:19:24Z",
+      "side": 1,
+      "message": "this needs to land in 24.03 first and i have proposed that in https://review.opendev.org/c/x/charm-ovn-chassis/+/920878",
+      "revId": "a4ea4ff0dac31cfcc0371d835e584b28b03c9f61",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    }
+  ]
+}
