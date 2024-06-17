@@ -60,6 +60,8 @@ applications:
 
   ovn-chassis:
     charm: ../../../ovn-chassis.charm
+    options:
+      enable-version-pinning: true
 
 relations:
 
