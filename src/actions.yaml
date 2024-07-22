@@ -23,5 +23,5 @@ run-deferred-hooks:
     .
     NOTE: Service will be restarted as needed irrespective of enable-auto-restarts
 show-deferred-events:
-    descrpition: |
+    description: |
         Show the outstanding restarts
