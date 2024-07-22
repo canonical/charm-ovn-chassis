@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c2c9edf8_fb3e7daa",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34352
+      },
+      "writtenOn": "2024-07-22T04:41:56Z",
+      "side": 1,
+      "message": "Build error is unrelated - failed to build rpds-py wheel:\n\n```\n2024-07-22 02:33:16.498926 | jammy-medium | ::   Building wheel for rpds-py (pyproject.toml): started\n2024-07-22 02:33:16.498954 | jammy-medium | ::   Building wheel for rpds-py (pyproject.toml): finished with status \u0027error\u0027\n2024-07-22 02:33:16.499429 | jammy-medium | ::   error: subprocess-exited-with-error\n2024-07-22 02:33:16.499486 | jammy-medium | ::\n2024-07-22 02:33:16.499512 | jammy-medium | ::   Ã— Building wheel for rpds-py (pyproject.toml) did not run successfully.\n2024-07-22 02:33:16.499534 | jammy-medium | ::   â”‚ exit code: 1\n2024-07-22 02:33:16.499559 | jammy-medium | ::   â•°â”€\u003e [13 lines of output]\n2024-07-22 02:33:16.500259 | jammy-medium | ::       Running `maturin pep517 build-wheel -i /tmp/tmpa1uycom_/bin/python --compatibility off`\n2024-07-22 02:33:16.500294 | jammy-medium | ::       ðŸ“¦ Including license file \"/tmp/pip-wheel-qvac7esk/rpds-py_70c63a1c088f4b4d9c88d9a2a4d4ce07/LICENSE\"\n2024-07-22 02:33:16.500305 | jammy-medium | ::       ðŸ”— Found pyo3 bindings\n2024-07-22 02:33:16.500315 | jammy-medium | ::       ðŸ Found CPython 3.12 at /tmp/tmpa1uycom_/bin/python\n2024-07-22 02:33:16.501202 | jammy-medium | ::       ðŸ“¡ Using build options features from pyproject.toml\n2024-07-22 02:33:16.501232 | jammy-medium | ::       error: package `triomphe v0.1.13` cannot be built because it requires rustc 1.76 or newer, while the currently active rustc version is 1.75.0\n2024-07-22 02:33:16.501243 | jammy-medium | ::       Either upgrade to rustc 1.76 or newer, or use\n2024-07-22 02:33:16.501252 | jammy-medium | ::       cargo update triomphe@0.1.13 --precise ver\n2024-07-22 02:33:16.501260 | jammy-medium | ::       where `ver` is the latest version of `triomphe` supporting rustc 1.75.0\n2024-07-22 02:33:16.501269 | jammy-medium | ::       ðŸ’¥ maturin failed\n2024-07-22 02:33:16.501279 | jammy-medium | ::         Caused by: Failed to build a native library through cargo\n2024-07-22 02:33:16.501747 | jammy-medium | ::         Caused by: Cargo build finished with \"exit status: 101\": `env -u CARGO PYO3_ENVIRONMENT_SIGNATURE\u003d\"cpython-3.12-64bit\" PYO3_PYTHON\u003d\"/tmp/tmpa1uycom_/bin/python\" PYTHON_SYS_EXECUTABLE\u003d\"/tmp/tmpa1uycom_/bin/python\" \"cargo\" \"rustc\" \"--features\" \"pyo3/extension-module\" \"--message-format\" \"json-render-diagnostics\" \"--manifest-path\" \"/tmp/pip-wheel-qvac7esk/rpds-py_70c63a1c088f4b4d9c88d9a2a4d4ce07/Cargo.toml\" \"--release\" \"--lib\"`\n2024-07-22 02:33:16.501774 | jammy-medium | ::       Error: command [\u0027maturin\u0027, \u0027pep517\u0027, \u0027build-wheel\u0027, \u0027-i\u0027, \u0027/tmp/tmpa1uycom_/bin/python\u0027, \u0027--compatibility\u0027, \u0027off\u0027] returned non-zero exit status 1\n2024-07-22 02:33:16.501784 | jammy-medium | ::       [end of output]\n2024-07-22 02:33:16.501794 | jammy-medium | ::\n2024-07-22 02:33:16.502234 | jammy-medium | ::   note: This error originates from a subprocess, and is likely not a problem with pip.\n2024-07-22 02:33:16.502260 | jammy-medium | ::   ERROR: Failed building wheel for rpds-py\n2024-07-22 02:33:16.502284 | jammy-medium | ::   Building wheel for Jinja2 (pyproject.toml): started\n2024-07-22 02:33:16.502882 | jammy-medium | ::   Building wheel for Jinja2 (pyproject.toml): finished with status \u0027done\u0027\n```",
+      "revId": "50480b3012b192736ef1898aea750d270526a6d0",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    }
+  ]
+}
