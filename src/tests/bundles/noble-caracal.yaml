@@ -27,6 +27,7 @@ applications:
     # instance vCPUs requested.
     #
     # Let's use a 8 VCPU 2 socket flavor for low level tests
+    series: jammy
     constraints: "instance-type=twosocketm1.xlarge"
     charm: ch:magpie
     num_units: 2
