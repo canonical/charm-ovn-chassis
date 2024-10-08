@@ -12,16 +12,21 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+import mock
 import sys
 
 sys.path.append('src')
 sys.path.append('src/lib')
 
+# charms.openstack (commit b90327) re-introduced a dependency on charmhelpers
+# so we need to mock that out explicitly here since we do not install
+# charmhelpers as a test dependency.
+sys.modules['charmhelpers.contrib.openstack.utils'] = mock.MagicMock()
+sys.modules['charmhelpers.contrib.openstack.utils'].\
+    CompareOpenStackReleases = mock.MagicMock()
 # Mock out charmhelpers so that we can test without it.
 import charms_openstack.test_mocks  # noqa
 charms_openstack.test_mocks.mock_charmhelpers()
-
-import mock
 
 
 class _fake_decorator(object):
