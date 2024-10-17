@@ -16,6 +16,23 @@
       "message": "Since this charm\u0027s functional tests do not deploy Openstack I build an ovn-chassis charm from stable/22.03 that pulled in the layer-ovn patch and used that in the octavia charm functional tests which passed. I then manually tested doing a remove-unit of a nova-compute unit and had no errors.",
       "revId": "29a3612639695ec05d736dcfc902fe7a0e6e88b8",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "501ec07a_48fd064b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32288
+      },
+      "writtenOn": "2024-10-17T12:10:23Z",
+      "side": 1,
+      "message": "Thanks @edward.hope-morley@canonical.com",
+      "revId": "29a3612639695ec05d736dcfc902fe7a0e6e88b8",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
