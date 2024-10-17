@@ -33,6 +33,23 @@
       "message": "@martin.kalcok@canonical.com there is no charm CI right now (OSCI is down) so tests have to be run manually. I tried the func tests but magpie has no noble build yet so wont work for master. This will need fixing seperately.",
       "revId": "03aa413c397d5e9cba416a2a32642f48bd1f367a",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "02c4b508_7aa7a3e2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32288
+      },
+      "writtenOn": "2024-10-17T12:07:52Z",
+      "side": 1,
+      "message": "Yeah, the situation is not ideal. But given that this is just rebuild with dependency update and you manually tested it, let\u0027s get it in.",
+      "revId": "03aa413c397d5e9cba416a2a32642f48bd1f367a",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
