@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d1ec6d2e_da08b89c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 6737
+      },
+      "writtenOn": "2024-11-09T15:47:05Z",
+      "side": 1,
+      "message": "Since we have no osci for func tests and the tests in this charm don\u0027t actually deploy using Openstack I opted to create a local build and use it to deploy Openstack. I tested a 3 node cloud and performed add/remove unit ops on ovn-chassis units successfully so I am happy to land this now.",
+      "revId": "c228f9a0bfe6e6051b5faa11e998f0d59285bb2d",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    }
+  ]
+}
