@@ -1,0 +1,8 @@
+Code-Review+2: Guillaume Boutry <guillaume.boutry@canonical.com>
+Workflow+1: Guillaume Boutry <guillaume.boutry@canonical.com>
+Verified+2: Zuul
+Submitted-by: Zuul
+Submitted-at: Tue, 19 Nov 2024 10:42:33 +0000
+Reviewed-on: https://review.opendev.org/c/x/charm-ovn-chassis/+/935616
+Project: x/charm-ovn-chassis
+Branch: refs/heads/master
