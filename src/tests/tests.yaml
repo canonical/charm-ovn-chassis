@@ -10,8 +10,8 @@ dev_bundles:
 - noble-caracal
 
 target_deploy_status:
-  magpie:
-    workload-status-message: icmp ok
+  ubuntu:
+    workload-status-message: ""
   ovn-central:
     workload-status: waiting
     workload-status-message-prefix: "'ovsdb-peer' incomplete, 'certificates' awaiting server certificate data"
