@@ -39,3 +39,10 @@ def configure_nrpe():
     """Handle config-changed for NRPE options."""
     with charm.provide_charm_instance() as charm_instance:
         charm_instance.render_nrpe()
+
+
+@reactive.when('cos-agent.available')
+def cos_agent_available():
+    cos_agent = reactive.endpoint_from_flag('cos-agent.available')
+    metrics_endpoint = cos_agent.MetricsEndpoint(9475)
+    cos_agent.update_cos_agent([metrics_endpoint])
