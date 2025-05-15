@@ -1,0 +1,4 @@
+[submodule "vendored/charm-interface-cos-agent"]
+	path = vendored/charm-interface-cos-agent
+	url = https://github.com/canonical/charm-interface-cos-agent.git
+	branch = grafana-dashboards

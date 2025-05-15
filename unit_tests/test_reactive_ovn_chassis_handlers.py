@@ -33,6 +33,7 @@ class TestRegisteredHooks(test_utils.TestRegisteredHooks):
             },
             'when': {
                 'configure_nrpe': ('config.rendered',),
+                'cos_agent_available': ('cos-agent.available',),
             },
             'when_any': {
                 'configure_nrpe': ('config.changed.nagios_context',
