@@ -5,6 +5,7 @@ includes:
   - interface:ovsdb-subordinate
   - interface:neutron-plugin
   - interface:juju-info
+  - interface:cos_agent
 options:
   basic:
     use_venv: True
