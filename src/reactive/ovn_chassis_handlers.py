@@ -29,6 +29,14 @@ def configure_deferred_restarts():
         instance.configure_deferred_restarts()
 
 
+@reactive.when_not('is-update-status-hook')
+@reactive.when('config.rendered')
+def configure_ovn_controller_log_permissions():
+    """Ensure ovn-controller log file permissions are rsyslog readable."""
+    with charm.provide_charm_instance() as charm_instance:
+        charm_instance.configure_ovn_controller_log_permissions()
+
+
 @reactive.when_none('charm.paused', 'is-update-status-hook')
 @reactive.when('config.rendered')
 @reactive.when_any('config.changed.nagios_context',
