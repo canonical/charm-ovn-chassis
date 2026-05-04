@@ -9,6 +9,7 @@ tags:
 - networking
 series:
 - jammy
+- noble
 subordinate: true
 extra-bindings:
   data:
