@@ -197,6 +197,12 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: ovn-chassis_ubuntu@${{ matrix.series }}-amd64.charm
+      - name: List files
+        run: |
+          ls -l ./
+          pwd
+          echo '----'
+          ls -lR
 
       - name: Install dependencies
         run: |
